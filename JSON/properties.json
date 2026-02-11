@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "titleName": "VENTA DE CASA EN OJOCALIENTE 1",
+      "titleName": "CASA EN VENTA EN OJOCALIENTE 1, AGUASCALIENTES",
       "subtitle": "Fracc. Ojocaliente 1, Aguascalientes, Ags",
       "images": ["Fracc. Ojocaliente 1/ojo.jpg", "Fracc. Ojocaliente 1/ojo1.jpg","Fracc. Ojocaliente 1/ojo2.jpg","Fracc. Ojocaliente 1/ojo3.jpg","Fracc. Ojocaliente 1/ojo4.jpg","Fracc. Ojocaliente 1/ojo5.jpg"],
       
@@ -24,8 +24,9 @@
     },
     {
       "id": 2,
-      "titleName": "Fracc. Hacienda San Marcos, Aguascalientes",
-      "images": ["FraccHaciendaSanMarcos/haciendasm.jpg", "FraccHaciendaSanMarcos/haciendasm2.jpg", "FraccHaciendaSanMarcos/haciendasm4.jpg", "FraccHaciendaSanMarcos/haciendasm5.jpg", "FraccHaciendaSanMarcos/haciendasm6.jpg", "FraccHaciendaSanMarcos/haciendasm7.jpg"],
+      "titleName": "CASA EN VENTA EN HACIENDA SAN MARCOS, AGUASCALIENTES",
+      "subtitle": " Hacienda San Marcos, Aguascalientes, atrás de NISSAN 1",
+      "images": ["FraccHaciendaSanMarcos/haciendasm.jpg", "FraccHaciendaSanMarcos/haciendasm2.jpg", "FraccHaciendaSanMarcos/haciendasm4.jpg", "FraccHaciendaSanMarcos/haciendasm5.jpg", "FraccHaciendaSanMarcos/haciendasm6.jpg", "FraccHaciendaSanMarcos/haciendasm7.jpg", "FraccHaciendaSanMarcos/haciendasm8.jpg", "FraccHaciendaSanMarcos/haciendasm9.jpg", "FraccHaciendaSanMarcos/haciendasm10.jpg", "FraccHaciendaSanMarcos/haciendasm11.jpg", "FraccHaciendaSanMarcos/haciendasm12.jpg", "FraccHaciendaSanMarcos/haciendasm13.jpg"],
 
       "tipoTransaction": "EN VENTA",
       "price": "1,200,000 MXN",
@@ -46,7 +47,8 @@
     },
     {
       "id": 3,
-      "titleName": "Fracc. Casa blanca, Aguascalientes, Ags",
+      "titleName": "CASA EN VENTA EN CASA BLANCA, AGS",
+      "subtitle": "Fracc. Casa blanca, Aguascalientes, Ags",
       "images": ["Fracc.CasaBlanca/CasaB.jpg", "Fracc.CasaBlanca/CasaB1.jpg", "Fracc.CasaBlanca/CasaB2.jpg", "Fracc.CasaBlanca/CasaB3.jpg", "Fracc.CasaBlanca/CasaB4.jpg", "Fracc.CasaBlanca/CasaB5.jpg"],
 
       "tipoTransaction": "EN VENTA",
@@ -69,7 +71,8 @@
 
     {
       "id": 4,
-      "titleName": "Rancho las borregas, Aguascalientes",
+      "titleName": "RANCHO LAS BORREGAS EN VENTA, AGUASCALIENTES",
+      "subtitle": "Rancho las borregas, Aguascalientes",
       "images": ["RanchoLasBorregas/RanchoBorregas.jpg", "RanchoLasBorregas/RanchoBorregas1.jpg", "RanchoLasBorregas/RanchoBorregas2.jpg", "RanchoLasBorregas/RanchoBorregas3.jpg", "RanchoLasBorregas/RanchoBorregas4.jpg", "RanchoLasBorregas/RanchoBorregas5.jpg"],
 
       "tipoTransaction": "EN VENTA",
@@ -175,7 +178,7 @@
     {
       "id": 9,
       "titleName": "Fracc. Morelos 1, Aguascalientes",
-      "images": ["Morelos1/MorelosI.jpg","Morelos1/MorelosI1.jpg","Morelos1/MorelosI2.jpg","Morelos1/MorelosI3.jpg","Morelos1/MorelosI4.jpg","Morelos1/MorelosI5.jpg"],
+      "images": ["Morelos1/MorelosI.jpg","Morelos1/MorelosI1.jpg","Morelos1/MorelosI2.jpg","Morelos1/MorelosI3.jpg","Morelos1/MorelosI4.jpg","Morelos1/MorelosI5.jpg","Morelos1/MorelosI6.jpg","Morelos1/MorelosI7.jpg","Morelos1/MorelosI8.jpg","Morelos1/MorelosI9.jpg"],
 
       "tipoTransaction": "EN VENTA",
       "price": "$1,900,000 MXN",
