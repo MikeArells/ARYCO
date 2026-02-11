@@ -92,11 +92,35 @@ fetch('JSON/properties.json')
         document.body.appendChild(script);
 
           
-       //Imagenes 
-    const gallery = document.querySelector('.galeria');
-    gallery.innerHTML = property.images
-      .map((img, index) => `<a href="#image${index + 1}"><img src="Material/${img}" alt=""></a>`)
-      .join('');
+       //--------  IMAGENES  --------- 
+    // const gallery = document.querySelector('.galeria');
+    // gallery.innerHTML = property.images
+    //   .map((img, index) => `<a href="#image${index + 1}"><img src="Material/${img}" alt=""></a>`)
+    //   .join('');
+
+          //------------ IMAGES  -----------------
+
+          // IMÁGENES (galería)
+      const visor = document.querySelector('.visor');
+      const miniaturas = document.querySelector('.miniaturas');
+
+      // Limpiar contenido previo
+      visor.innerHTML = '';
+      miniaturas.innerHTML = '';
+
+      // Generar imágenes grandes
+      property.images.forEach((img, index) => {
+        const figure = document.createElement('figure');
+        figure.id = `image${index + 1}`;
+        figure.innerHTML = `<img src="Material/${img}" alt="Foto ${index + 1}">`;
+        visor.appendChild(figure);
+
+        // Generar miniatura
+        const a = document.createElement('a');
+        a.href = `#image${index + 1}`;
+        a.innerHTML = `<img src="Material/${img}" alt="Miniatura ${index + 1}">`;
+        miniaturas.appendChild(a);
+      });
 
       // Generar lightbox dinámico
 const gridItem = document.querySelector('.grid-item:last-child'); // donde están los <article>
