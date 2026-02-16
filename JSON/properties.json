@@ -93,7 +93,8 @@
     },
     {
       "id": 5,
-      "titleName": "Calle Gral. Emiliano Zapata, barrio de Guadalupe",
+      "titleName": "EDIFICIO EN VENTA EN GRAL. EMILIANO ZAPATA AGUASCALIENTES",
+      "subtitle": "Calle Gral. Emiliano Zapata, barrio de Guadalupe",
       "images": ["EdificioZapata/EdificioZapata.jpg", "EdificioZapata/EdificioZapata2.jpg", "EdificioZapata/EdificioZapata3.jpg", "EdificioZapata/EdificioZapata6.jpg", "EdificioZapata/EdificioZapata7.jpg", "EdificioZapata/EdificioZapata14.jpg"],
 
       "tipoTransaction": "EN VENTA",
@@ -114,7 +115,8 @@
     },
     {
       "id": 6,
-      "titleName": "Fracc. Lomas del chapulin, Ags",
+      "titleName": "DEPARTAMENTOS EN VENTA EN LOMAS DEL CHAPULIN, AGUASCALIENTES",
+      "subtitle": "Fracc. Lomas del chapulin, Ags",
       "images": ["LomasDelChapulin/LomasDelChapulin.jpg", "LomasDelChapulin/LomasDelChapulin1.jpg", "LomasDelChapulin/LomasDelChapulin2.jpg"],
 
       "tipoTransaction": "EN VENTA",
@@ -135,7 +137,8 @@
     },
     {
       "id": 7,
-      "titleName": "Fracc. El Dorado, 1ra Secc, Aguascalientes",
+      "titleName": "CONSULTORIOS EN RENTA EN EL DORADO, AGUASCALIENTES",
+      "subtitle": "Fracc. El Dorado, 1ra Secc, Aguascalientes",
       "images": ["ConsultDorado/ConsulDorado.jpg", "ConsultDorado/ConsulDorado1.jpg", "ConsultDorado/ConsulDorado2.jpg", "ConsultDorado/ConsulDorado3.jpg", "ConsultDorado/ConsulDorado4.jpg"],
 
       "tipoTransaction": "EN RENTA",
@@ -156,7 +159,8 @@
     },
     {
       "id": 8,
-      "titleName": "Cañada Honda, Aguascalientes",
+      "titleName": "TERRENO EN VENTA EN CAÑADA HONDAD, AGUASCALIENTES",
+      "subtitle": "Cañada Honda, Aguascalientes",
       "images": ["CanadaHonda/CanadaHonda.jpg", "CanadaHonda/CanadaHonda1.jpg", "CanadaHonda/CanadaHonda2.jpg", "CanadaHonda/CanadaHonda3.jpg", "CanadaHonda/CanadaHonda4.jpg", "CanadaHonda/CanadaHonda5.jpg"],
 
       "tipoTransaction": "EN VENTA",
@@ -177,7 +181,8 @@
     },
     {
       "id": 9,
-      "titleName": "Fracc. Morelos 1, Aguascalientes",
+      "titleName": "CASA EN VENTA EN EL MORELOS 1, AGUASCALIENTES",
+      "subtitle": "Fracc. Morelos 1, Aguascalientes",
       "images": ["Morelos1/MorelosI.jpg","Morelos1/MorelosI1.jpg","Morelos1/MorelosI2.jpg","Morelos1/MorelosI3.jpg","Morelos1/MorelosI4.jpg","Morelos1/MorelosI5.jpg","Morelos1/MorelosI6.jpg","Morelos1/MorelosI7.jpg","Morelos1/MorelosI8.jpg","Morelos1/MorelosI9.jpg"],
 
       "tipoTransaction": "EN VENTA",
@@ -199,7 +204,8 @@
     },
     {
       "id": 10,
-      "titleName": "Fracc. Pulgas Pandas, Aguascalientes",
+      "titleName": "CASA EN VENTA EN PULGAS PANDAS, AGUASCALIENTES",
+      "subtitle": "Fracc. Pulgas Pandas, Aguascalientes",
       "images": ["PulgasPandas/pulgaspandas.jpg","PulgasPandas/pulgaspandas1.jpg","PulgasPandas/pulgaspandas2.jpg","PulgasPandas/pulgaspandas3.jpg","PulgasPandas/pulgaspandas4.jpg","PulgasPandas/pulgaspandas5.jpg"],
 
       "tipoTransaction": "EN VENTA",
@@ -220,7 +226,8 @@
       "video": ""
     },{
       "id": 11,
-      "titleName": "Fracc. Arroyo el Molino, Aguascalientes",
+      "titleName": "CASA EN RENTA EN ARROYO EL MOLINO, AGUASCALIENTES",
+      "subtitle": "Fracc. Arroyo el Molino, Aguascalientes",
       "images": ["CasaArroyoMolino/ArroyoMolino.jpg","CasaArroyoMolino/ArroyoMolino1.jpg","CasaArroyoMolino/ArroyoMolino2.jpg","CasaArroyoMolino/ArroyoMolino3.jpg","CasaArroyoMolino/ArroyoMolino4.jpg","CasaArroyoMolino/ArroyoMolino5.jpg"],
 
       "tipoTransaction": "EN RENTA",
