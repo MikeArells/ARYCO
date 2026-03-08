@@ -1,7 +1,7 @@
 
 console.log('map.js ejecutándose');
 
-mapboxgl.accessToken = 'pk.eyJ1IjoibWlrZWFyZWxscyIsImEiOiJjbWthNHlxMTcwcTZ3M2hxNzVhNjdqdnhoIn0.Ssc9xLaCoBEAJ-9liowMAg';
+mapboxgl.accessToken = window.MAPBOX_TOKEN;
 
 const map = new mapboxgl.Map({
   container: 'map',
