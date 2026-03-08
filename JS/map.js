@@ -36,11 +36,11 @@ let baseList = [];
     baseList = properties;
 
     if(page.includes("comprar")){
-      baseList = properties.filter(p => p.tipoTransaction.includes("venta"));
+      baseList = properties.filter(p => p.tipoTransaction.includes("EN VENTA"));
     }
 
     if(page.includes("rentar")){
-      baseList = properties.filter(p => p.tipoTransaction.includes("renta"));
+      baseList = properties.filter(p => p.tipoTransaction.includes("EN RENTA"));
     }
 
       //Render

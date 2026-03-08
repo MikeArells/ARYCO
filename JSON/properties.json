@@ -6,8 +6,8 @@
       "subtitle": " Hacienda San Marcos, Aguascalientes, atrás de NISSAN 1",
       "images": ["FraccHaciendaSanMarcos/haciendasm.jpg", "FraccHaciendaSanMarcos/haciendasm2.jpg", "FraccHaciendaSanMarcos/haciendasm4.jpg", "FraccHaciendaSanMarcos/haciendasm5.jpg", "FraccHaciendaSanMarcos/haciendasm6.jpg", "FraccHaciendaSanMarcos/haciendasm7.jpg", "FraccHaciendaSanMarcos/haciendasm8.jpg", "FraccHaciendaSanMarcos/haciendasm9.jpg", "FraccHaciendaSanMarcos/haciendasm10.jpg", "FraccHaciendaSanMarcos/haciendasm11.jpg", "FraccHaciendaSanMarcos/haciendasm12.jpg", "FraccHaciendaSanMarcos/haciendasm13.jpg"],
 
-      "tipoTransaction": "venta",
-      "price": "1,200,000 MXN",
+      "tipoTransaction": "EN VENTA",
+      "price": "$1,200,000 MXN",
       "TipoProperty": "Casa",
       "ground": "90 m²",
       "construction": "61.4 m²",
@@ -24,12 +24,58 @@
       "video": "https://www.tiktok.com/@mikearells/video/7593823659584736520"
     },
     {
+      "id": 2,
+      "titleName": "BODEGA EN RENTA AL NORTE DE AGUASCALIENTES",
+      "subtitle": "Bodega ubicada cerca de independiencia, atrás de Flextronics",
+      "images": ["BRIndependencia/BRIndependencia.jpg", "BRIndependencia/BRIndependencia1.jpg", "BRIndependencia/BRIndependencia2.jpg", "BRIndependencia/BRIndependencia3.jpg", "BRIndependencia/BRIndependencia4.jpg", "BRIndependencia/BRIndependencia5.jpg", "BRIndependencia/BRIndependencia6.jpg", "BRIndependencia/BRIndependencia7.jpg"],
+
+      "tipoTransaction": "EN RENTA",
+      "price": "$50,000 MXN",
+      "TipoProperty": "Bodega",
+      "ground": "114m²",
+      "construction": "114m²",
+      "ocupation": "Inmediata",
+      "payment": ".",
+      "servicios": "Agua · Drenaje · Luz",
+
+      "recamaras": 0,
+      "banos": 1,
+      "carros": 1,
+
+      "description": "🏭 Bodega en Renta al Norte de la Ciudad – Excelente Ubicación<br><br>Bodega disponible en renta cerca de Av. Independencia, ubicada atrás de Flex, en una zona estratégica con fácil acceso a vialidades principales.<br><br>📍 Ubicación: Norte de la ciudad<br>📐 Superficie: 60 x 19 metros<br>🏢 Cuenta con área de oficinas<br>🚚 Ideal para almacén, logística, taller o distribución<br><br>💰 Renta mensual: $50,000<br><br>Excelente opción para empresas que buscan ubicación estratégica y amplio espacio de trabajo.",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.365710368434!2d-102.29941777526024!3d21.958922955183578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef816f9cb28f%3A0x9f93ec7e981c39b6!2sMoscatel%20302%2C%2020907%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1772993733120!5m2!1ses-419!2smx",
+      "video": ""
+    },
+    {
+      "id": 3,
+      "titleName": "",
+      "subtitle": "",
+      "images": ["", "", "", "", "", "", "", ""],
+
+      "tipoTransaction": "EN RENTA",
+      "price": "",
+      "TipoProperty": "Bodega",
+      "ground": "m²",
+      "construction": "m²",
+      "ocupation": "Inmediata",
+      "payment": "Contado y crédito Fovissste.",
+      "servicios": "Agua · Drenaje · Luz",
+
+      "recamaras": 3,
+      "banos": 1,
+      "carros": 1,
+
+      "description": "🏭 Bodega en Renta al Norte de la Ciudad – Excelente Ubicación<br><br>Bodega disponible en renta cerca de Av. Independencia, ubicada atrás de Flex, en una zona estratégica con fácil acceso a vialidades principales.<br><br>📍 Ubicación: Norte de la ciudad<br>📐 Superficie: 60 x 19 metros<br>🏢 Cuenta con área de oficinas<br>🚚 Ideal para almacén, logística, taller o distribución<br><br>💰 Renta mensual: $50,000<br><br>Excelente opción para empresas que buscan ubicación estratégica y amplio espacio de trabajo.",
+      "map": "",
+      "video": ""
+    },
+    {
       "id": 4,
       "titleName": "RANCHO LAS BORREGAS EN VENTA, AGUASCALIENTES",
       "subtitle": "Rancho las borregas, Aguascalientes",
       "images": ["RanchoLasBorregas/RanchoBorregas.jpg", "RanchoLasBorregas/RanchoBorregas1.jpg", "RanchoLasBorregas/RanchoBorregas2.jpg", "RanchoLasBorregas/RanchoBorregas3.jpg", "RanchoLasBorregas/RanchoBorregas4.jpg", "RanchoLasBorregas/RanchoBorregas5.jpg"],
 
-      "tipoTransaction": "venta",
+      "tipoTransaction": "EN VENTA",
       "price": "$19,000,000 MXN",
       "TipoProperty": "Rancho",
       "ground": "172,479 m² (más de 17 hectáreas)",
@@ -51,7 +97,7 @@
       "subtitle": "Fracc. Lomas del chapulin, Ags",
       "images": ["LomasDelChapulin/LomasDelChapulin.jpg", "LomasDelChapulin/LomasDelChapulin1.jpg", "LomasDelChapulin/LomasDelChapulin2.jpg"],
 
-      "tipoTransaction": "venta",
+      "tipoTransaction": "EN VENTA",
       "price": "$650,000 MXN",
       "TipoProperty": "Departamento",
       "ground": "57.85 m²",
@@ -73,7 +119,7 @@
       "subtitle": "Fracc. El Dorado, 1ra Secc, Aguascalientes",
       "images": ["ConsultDorado/ConsulDorado.jpg", "ConsultDorado/ConsulDorado1.jpg", "ConsultDorado/ConsulDorado2.jpg", "ConsultDorado/ConsulDorado3.jpg", "ConsultDorado/ConsulDorado4.jpg"],
 
-      "tipoTransaction": "renta",
+      "tipoTransaction": "EN RENTA",
       "price": "$25,000 MXN c/uno",
       "TipoProperty": "Consultorio",
       "ground": "160 m² (8 x 20 m)",
@@ -95,7 +141,7 @@
       "subtitle": "Cañada Honda, Aguascalientes",
       "images": ["CanadaHonda/CanadaHonda.jpg", "CanadaHonda/CanadaHonda1.jpg", "CanadaHonda/CanadaHonda2.jpg", "CanadaHonda/CanadaHonda3.jpg", "CanadaHonda/CanadaHonda4.jpg", "CanadaHonda/CanadaHonda5.jpg"],
 
-      "tipoTransaction": "venta",
+      "tipoTransaction": "EN VENTA",
       "price": "$4,200 MXN por m²",
       "TipoProperty": "Terreno",
       "ground": "Lote 1: 112.98 m² y Lote 2: 107.20 m²",
@@ -117,7 +163,7 @@
       "subtitle": "Fracc. Morelos 1, Aguascalientes",
       "images": ["Morelos1/MorelosI.jpg","Morelos1/MorelosI1.jpg","Morelos1/MorelosI2.jpg","Morelos1/MorelosI3.jpg","Morelos1/MorelosI4.jpg","Morelos1/MorelosI5.jpg","Morelos1/MorelosI6.jpg","Morelos1/MorelosI7.jpg","Morelos1/MorelosI8.jpg","Morelos1/MorelosI9.jpg"],
 
-      "tipoTransaction": "venta",
+      "tipoTransaction": "EN VENTA",
       "price": "$1,900,000 MXN",
       "TipoProperty": "Casa",
       "ground": "90 m²",
@@ -140,7 +186,7 @@
       "subtitle": "Fracc. Pulgas Pandas, Aguascalientes",
       "images": ["PulgasPandas/pulgaspandas.jpg","PulgasPandas/pulgaspandas1.jpg","PulgasPandas/pulgaspandas2.jpg","PulgasPandas/pulgaspandas3.jpg","PulgasPandas/pulgaspandas4.jpg","PulgasPandas/pulgaspandas5.jpg"],
 
-      "tipoTransaction": "venta",
+      "tipoTransaction": "EN VENTA",
       "price": "$8,500,000 MXN",
       "TipoProperty": "Casa",
       "ground": "280 m²",
@@ -162,7 +208,7 @@
       "subtitle": "Fracc. Arroyo el Molino, Aguascalientes",
       "images": ["CasaArroyoMolino/ArroyoMolino.jpg","CasaArroyoMolino/ArroyoMolino1.jpg","CasaArroyoMolino/ArroyoMolino2.jpg","CasaArroyoMolino/ArroyoMolino3.jpg","CasaArroyoMolino/ArroyoMolino4.jpg","CasaArroyoMolino/ArroyoMolino5.jpg"],
 
-      "tipoTransaction": "renta",
+      "tipoTransaction": "EN RENTA",
       "price": "$25,000 MXN",
       "TipoProperty": "Casa",
       "ground": " m²",
