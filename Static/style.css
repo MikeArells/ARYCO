@@ -28,6 +28,10 @@ body {
   .gradient-background {
     background-color: #2d6326;
   }
+
+  .nav-wrapper{
+    position: sticky;
+  }
   
   .logo {
     height: 50px; 
@@ -39,10 +43,6 @@ body {
   
 
   /**************** HAMBURGER ******************/
- /* header {
-    justify-content: flex-start !important;
-    gap: 15px;
-  } */
 
 .hamburger {
   display: flex;
@@ -106,44 +106,122 @@ body {
 
 }
   
-  /*-----------------------------HERO-----------------*/
+  /*--------------------- HERO -----------------*/
   
   .Casalux{
     width: 1300px;
     object-fit: cover;
   }
   
-  /*----------- MAPA INTERACTIVO EN HOME ---------------*/
-  .map-section {
-    position: relative;
-    padding: 30px;
-  }
-  
-  #map {
-    width: 50%;
-    height: 70vh;
-    padding-right: 50px;
-  }
+ /*--------------- MAPA MAPBOX -----------------*/
+/* .map-col {
+  align-self: flex-start;   /* evita que se estire 
+} */
 
-  .geocoder {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    width: 90%;
-    max-width: 400px;
-  }
+.map-wrapper {
+  /* position: relative; */
+  /* height: 70vh; */         /* Ajusta a tu gusto: 60–80vh suele ir bien */
+  /* min-height: 420px; */
+  /* width: 300px; */
+  position: sticky;
+  top: 110px;               /* altura de tu navbar */
+  height: calc(100vh - 100px);
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+/* .geocoder {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 90%;
+  max-width: 400px;
+} */
+
+/*--------------- FILTER BAR ---------------*/
+/* #searchLocation{
+  flex: 2;
+} */
+
+.filter-section{
+
+  top: 80px;
+  border: 1px solid #ddd;
+  background: white;
+  z-index: 1000;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding-top: 20px;
+}
+ 
+.search-bar input,
+.search-bar select,
+.search-bar button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+ 
+.search-bar button {
+  background: #006aff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+ 
+.search-bar button:hover {
+  background: #0053cc;
+}
 
   /*----------------- PROPIEDADES ----------------*/
 
-  .card img {
-    width: 100%;
-    height: 250px; /* Ajusta la altura deseada */
-    object-fit: cover; /* Recorta la imagen manteniendo proporción */
-  }
+.title-prop{
+  margin: 10px;
+  margin-bottom: 20px;
+}
 
-  /*--------- CAJA DE CONTACTO ----------*/
+.card{
+  transition: transform 0.2s ease;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px; /* Ajusta la altura deseada */
+  object-fit: cover; /* Recorta la imagen manteniendo proporción */
+  display: block;
+}
+
+.list-wrapper {
+  height: 100vh;
+  overflow-y: auto;  /* este lado scrollea */
+}
+
+
+/* En móviles normalmente NO quieres sticky: deja fluir apilado */
+@media (max-width: 991.98px) {
+  .map-wrapper {
+    height: 60vh;       /* menos alto en móvil */
+  }
+  .list-wrapper {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+/*--------- CAJA DE CONTACTO ----------*/
 
 .contact-form {
   max-width: 400px;
@@ -213,13 +291,6 @@ textarea {
   
   
   /*--------------- FOOTER ---------------*/
-
-  /* html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  } */
   
   main {
     flex: 1;

@@ -1,34 +1,12 @@
 [
+    
     {
       "id": 1,
-      "titleName": "CASA EN VENTA EN OJOCALIENTE 1, AGUASCALIENTES",
-      "subtitle": "Fracc. Ojocaliente 1, Aguascalientes, Ags",
-      "images": ["Fracc. Ojocaliente 1/ojo.jpg", "Fracc. Ojocaliente 1/ojo1.jpg","Fracc. Ojocaliente 1/ojo2.jpg","Fracc. Ojocaliente 1/ojo3.jpg","Fracc. Ojocaliente 1/ojo4.jpg","Fracc. Ojocaliente 1/ojo5.jpg"],
-      
-      "tipoTransaction": "EN VENTA",
-      "price": "$1,550,000 MXN",
-      "TipoProperty": "Casa",
-      "ground": "120 m² (6 x 20)",
-      "construction": "153 m²",
-      "ocupation": "inmediata",
-      "payment": "Contado y créditos.",
-      "servicios": "Agua · Drenaje · Luz",
-      
-      "recamaras": 3,
-      "banos": 2,
-      "carros": 2,
-
-      "description": "De $1,800,000 a $1,550,000.  <br>Ubicación: Calle El Refugio #245, entre Tercer Anillo y Alameda, Aguascalientes. <br><br>✨ Características: <br>✅ Terreno: 6x20 m <br>✅ Construcción: 153m2 <br>✅ 2 pisos <br>✅ 3 habitaciones  Espaciosas y bien iluminadas <br>✅ 2 baños completos <br>✅ 2 patios de servicio  Ideal para área de lavado y almacenamiento <br>✅ Balcon <br><br>Esta propiedad acepta créditos",
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.1614471595044!2d-102.25651132653523!3d21.88985795765081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429f1e21230bb1b%3A0xda2b803f11140b17!2sEl%20Refugio%20245%2C%20Ojocaliente%20I%2C%2020196%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses!2smx!4v1763529692359!5m2!1ses!2smx",
-      "video": "https://www.tiktok.com/@mikearells/video/7549695828349275399"
-    },
-    {
-      "id": 2,
       "titleName": "CASA EN VENTA EN HACIENDA SAN MARCOS, AGUASCALIENTES",
       "subtitle": " Hacienda San Marcos, Aguascalientes, atrás de NISSAN 1",
       "images": ["FraccHaciendaSanMarcos/haciendasm.jpg", "FraccHaciendaSanMarcos/haciendasm2.jpg", "FraccHaciendaSanMarcos/haciendasm4.jpg", "FraccHaciendaSanMarcos/haciendasm5.jpg", "FraccHaciendaSanMarcos/haciendasm6.jpg", "FraccHaciendaSanMarcos/haciendasm7.jpg", "FraccHaciendaSanMarcos/haciendasm8.jpg", "FraccHaciendaSanMarcos/haciendasm9.jpg", "FraccHaciendaSanMarcos/haciendasm10.jpg", "FraccHaciendaSanMarcos/haciendasm11.jpg", "FraccHaciendaSanMarcos/haciendasm12.jpg", "FraccHaciendaSanMarcos/haciendasm13.jpg"],
 
-      "tipoTransaction": "EN VENTA",
+      "tipoTransaction": "venta",
       "price": "1,200,000 MXN",
       "TipoProperty": "Casa",
       "ground": "90 m²",
@@ -46,36 +24,12 @@
       "video": "https://www.tiktok.com/@mikearells/video/7593823659584736520"
     },
     {
-      "id": 3,
-      "titleName": "CASA EN VENTA EN CASA BLANCA, AGS",
-      "subtitle": "Fracc. Casa blanca, Aguascalientes, Ags",
-      "images": ["Fracc.CasaBlanca/CasaB.jpg", "Fracc.CasaBlanca/CasaB1.jpg", "Fracc.CasaBlanca/CasaB2.jpg", "Fracc.CasaBlanca/CasaB3.jpg", "Fracc.CasaBlanca/CasaB4.jpg", "Fracc.CasaBlanca/CasaB5.jpg"],
-
-      "tipoTransaction": "EN VENTA",
-      "price": "$1,700,000 MXN",
-      "TipoProperty": "Casa",
-      "ground": "m²",
-      "construction": " m²",
-      "ocupation": "Inmediata",
-      "payment": "Solo contado.",
-      "servicios": "Agua · Drenaje · Luz",
-
-      "recamaras": 2,
-      "banos": 1,
-      "carros": 1,
-
-      "description": "¡Ideal para parejas, familias pequeñas o como inversión!<br><br>📍 Ubicación tranquila y con excelente acceso a servicios.<br><br>🔹 1 planta<br>🔹 2 recámaras cómodas<br>🔹 1 baño completo<br>🔹 Cochera para 1 auto<br>🔹 Amplio patio trasero<br>🔹 Área de lavado techada<br>🔹Solo contado, las escrituras se entregan en 2026<br><br>💬 Lista para habitar o remodelar a tu gusto. ¡Gran oportunidad! ",
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3703.020785108431!2d-102.2745727252631!3d21.8567339588279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ede92d50e9f5%3A0x653ed1f3a92726!2sVivero%20del%20Roc%C3%ADo%20108%2C%20Casa%20Blanca%2C%2020297%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1763925560155!5m2!1ses-419!2smx",
-      "video": "https://www.tiktok.com/@mikearells/video/7566410775183510805"
-    },
-
-    {
       "id": 4,
       "titleName": "RANCHO LAS BORREGAS EN VENTA, AGUASCALIENTES",
       "subtitle": "Rancho las borregas, Aguascalientes",
       "images": ["RanchoLasBorregas/RanchoBorregas.jpg", "RanchoLasBorregas/RanchoBorregas1.jpg", "RanchoLasBorregas/RanchoBorregas2.jpg", "RanchoLasBorregas/RanchoBorregas3.jpg", "RanchoLasBorregas/RanchoBorregas4.jpg", "RanchoLasBorregas/RanchoBorregas5.jpg"],
 
-      "tipoTransaction": "EN VENTA",
+      "tipoTransaction": "venta",
       "price": "$19,000,000 MXN",
       "TipoProperty": "Rancho",
       "ground": "172,479 m² (más de 17 hectáreas)",
@@ -92,34 +46,12 @@
       "video": ""
     },
     {
-      "id": 5,
-      "titleName": "EDIFICIO EN VENTA EN GRAL. EMILIANO ZAPATA AGUASCALIENTES",
-      "subtitle": "Calle Gral. Emiliano Zapata, barrio de Guadalupe",
-      "images": ["EdificioZapata/EdificioZapata.jpg", "EdificioZapata/EdificioZapata2.jpg", "EdificioZapata/EdificioZapata3.jpg", "EdificioZapata/EdificioZapata6.jpg", "EdificioZapata/EdificioZapata7.jpg", "EdificioZapata/EdificioZapata14.jpg"],
-
-      "tipoTransaction": "EN VENTA",
-      "price": "$3,650,000 MXN",
-      "TipoProperty": "Edificio",
-      "ground": "80 m²",
-      "construction": "200 m²",
-      "ocupation": "Inmediata",
-      "servicios": "Agua · Drenaje · Luz",
-
-      "recamaras": 7,
-      "banos": 7,
-      "carros": 1,
-
-      "description": "En Venta Edificio de departamentos <br><br>¡Excelente oportunidad de inversión en el centro, a solo 3 cuadras del Parián y 2 de la catedral!<br><br>VIDEO: https://vt.tiktok.com/ZSDqUP24t/<br><br>📐 Propiedad de 3 niveles con 7 departamentos tipo loft (estudio)<br>Cada departamento cuenta con:<br><br>➡️Cocineta<br>➡️Clóset<br>➡️Baño completo<br>➡️Algunos tienen balcón y/o terraza.<br>➡️área común (sala).<br><br>🔒 Acceso principal con cerradura electrónica digital<br><br>📈 La mayoría de los departamentos ya están rentados, generando ingresos desde el primer día.<br><br>📄 Documentación en regla<br><br>✅ Ideal para inversionistas que buscan rentabilidad en una zona céntrica,  y de alta demanda, con retorno seguro.",
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.3653262635353!2d-102.30296942526233!3d21.882003557928165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee62abd490c3%3A0x54cfc3622c037ab6!2sGral.%20Emiliano%20Zapata%20122%2C%20Zona%20Centro%2C%2020000%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1764436401904!5m2!1ses-419!2smx",
-      "video": "https://www.tiktok.com/@mikearells/video/7570477530424085781"
-    },
-    {
       "id": 6,
       "titleName": "DEPARTAMENTOS EN VENTA EN LOMAS DEL CHAPULIN, AGUASCALIENTES",
       "subtitle": "Fracc. Lomas del chapulin, Ags",
       "images": ["LomasDelChapulin/LomasDelChapulin.jpg", "LomasDelChapulin/LomasDelChapulin1.jpg", "LomasDelChapulin/LomasDelChapulin2.jpg"],
 
-      "tipoTransaction": "EN VENTA",
+      "tipoTransaction": "venta",
       "price": "$650,000 MXN",
       "TipoProperty": "Departamento",
       "ground": "57.85 m²",
@@ -141,9 +73,9 @@
       "subtitle": "Fracc. El Dorado, 1ra Secc, Aguascalientes",
       "images": ["ConsultDorado/ConsulDorado.jpg", "ConsultDorado/ConsulDorado1.jpg", "ConsultDorado/ConsulDorado2.jpg", "ConsultDorado/ConsulDorado3.jpg", "ConsultDorado/ConsulDorado4.jpg"],
 
-      "tipoTransaction": "EN RENTA",
+      "tipoTransaction": "renta",
       "price": "$25,000 MXN c/uno",
-      "TipoProperty": "Casa",
+      "TipoProperty": "Consultorio",
       "ground": "160 m² (8 x 20 m)",
       "construction": "105 m²",
       "ocupation": "Inmediata",
@@ -163,7 +95,7 @@
       "subtitle": "Cañada Honda, Aguascalientes",
       "images": ["CanadaHonda/CanadaHonda.jpg", "CanadaHonda/CanadaHonda1.jpg", "CanadaHonda/CanadaHonda2.jpg", "CanadaHonda/CanadaHonda3.jpg", "CanadaHonda/CanadaHonda4.jpg", "CanadaHonda/CanadaHonda5.jpg"],
 
-      "tipoTransaction": "EN VENTA",
+      "tipoTransaction": "venta",
       "price": "$4,200 MXN por m²",
       "TipoProperty": "Terreno",
       "ground": "Lote 1: 112.98 m² y Lote 2: 107.20 m²",
@@ -185,7 +117,7 @@
       "subtitle": "Fracc. Morelos 1, Aguascalientes",
       "images": ["Morelos1/MorelosI.jpg","Morelos1/MorelosI1.jpg","Morelos1/MorelosI2.jpg","Morelos1/MorelosI3.jpg","Morelos1/MorelosI4.jpg","Morelos1/MorelosI5.jpg","Morelos1/MorelosI6.jpg","Morelos1/MorelosI7.jpg","Morelos1/MorelosI8.jpg","Morelos1/MorelosI9.jpg"],
 
-      "tipoTransaction": "EN VENTA",
+      "tipoTransaction": "venta",
       "price": "$1,900,000 MXN",
       "TipoProperty": "Casa",
       "ground": "90 m²",
@@ -199,7 +131,7 @@
       "carros": 4,
 
       "description": "¡Casa Productiva en Venta en Morelos 1, Aguascalientes! a una cuadra de Sensata. <br><br>¿Buscas una propiedad que te genere ingresos y al mismo tiempo te brinde comodidad? Esta es tu oportunidad. Ubicada a solo una cuadra de Sensata, en una zona estratégica con gran flujo y conectividad.<br><br>✅ Características principales<br><br>✅Terreno: 90 m² (6 x 15)<br>✅Construcción: 150 m²<br>✅Concepto productivo:<br>Local comercial o bodega en planta baja, perfecto para negocio propio o renta.<br><br>✅Departamento funcional con:<br>🛏 2 recámaras<br>🚿 1 baño completo<br>🍽 Cocina y área de convivencia<br><br>⭐ Ventajas<br>✅Excelente ubicación al sur, cerca de avenidas principales y zona industrial.<br>✅Ideal para inversionistas o emprendedores que buscan espacio para negocio y vivienda en una sola propiedad.<br>✅Gran potencial para rentas comerciales y habitacionales..",
-      "map": "",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7406.082243895974!2d-102.269382009746!3d21.85594947774625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429edee19006aef%3A0x9db1412937b78e8c!2sMorelos%20I%2C%2020298%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1772920617001!5m2!1ses-419!2smx",
       "video": "https://www.tiktok.com/@mikearells/video/7592020698906823957"
     },
     {
@@ -208,7 +140,7 @@
       "subtitle": "Fracc. Pulgas Pandas, Aguascalientes",
       "images": ["PulgasPandas/pulgaspandas.jpg","PulgasPandas/pulgaspandas1.jpg","PulgasPandas/pulgaspandas2.jpg","PulgasPandas/pulgaspandas3.jpg","PulgasPandas/pulgaspandas4.jpg","PulgasPandas/pulgaspandas5.jpg"],
 
-      "tipoTransaction": "EN VENTA",
+      "tipoTransaction": "venta",
       "price": "$8,500,000 MXN",
       "TipoProperty": "Casa",
       "ground": "280 m²",
@@ -230,7 +162,7 @@
       "subtitle": "Fracc. Arroyo el Molino, Aguascalientes",
       "images": ["CasaArroyoMolino/ArroyoMolino.jpg","CasaArroyoMolino/ArroyoMolino1.jpg","CasaArroyoMolino/ArroyoMolino2.jpg","CasaArroyoMolino/ArroyoMolino3.jpg","CasaArroyoMolino/ArroyoMolino4.jpg","CasaArroyoMolino/ArroyoMolino5.jpg"],
 
-      "tipoTransaction": "EN RENTA",
+      "tipoTransaction": "renta",
       "price": "$25,000 MXN",
       "TipoProperty": "Casa",
       "ground": " m²",

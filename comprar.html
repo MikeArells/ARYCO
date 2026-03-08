@@ -18,12 +18,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="shortcut icon" href="Material/favicon.ico" type="image/x-icon">
     <link rel="icon" href="Material/favicon.ico" type="image/x-icon">
 
-    <!-- <link
+    <link
         href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
         rel="stylesheet"
-    /> -->
+    />
 
-    <!-- <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.1/mapbox-gl-geocoder.css" rel="stylesheet"> -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.1/mapbox-gl-geocoder.css" rel="stylesheet">
 
 </head>
 
@@ -50,11 +50,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <!-- MENÚ COMPLETO -->
         <div class="nav-wrapper" id="nav-wrapper">
-
           <ul class="nav col-6 col-md-auto mb-2 justify-content-center mb-md-0"> 
-            <li><a href="comprar.html" class="nav-link px-5 text-white" >COMPRAR</a></li> 
-            <li><a href="rentar.html" class="nav-link px-5 text-white">RENTAR</a></li> 
-            <li><a href="vender.html" class="nav-link px-5 text-white">VENDER</a></li> 
+            <li><a href="comprar.html" class="nav-link px-5 text-white" >Comprar</a></li> 
+            <li><a href="rentar.html" class="nav-link px-5 text-white">Rentar</a></li> 
+            <li><a href="vender.html" class="nav-link px-5 text-white">Vender</a></li> 
           </ul> 
 
           <div class="logo">
@@ -62,187 +61,153 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
 
           <ul class="nav col-6 col-md-auto mb-2 justify-content-center mb-md-0"> 
-              <li><a href="nosotros.html" class="nav-link px-5 text-white">NOSOTROS</a></li> 
+              <li><a href="nosotros.html" class="nav-link px-5 text-white">Nosotros</a></li> 
           </ul> 
 
           <div class="col-md-3 text-end"> 
             <button type="button" class="btn btn-outline-primary me-4" disabled>Cotizar seguro</button> 
             <button type="button" class="btn btn-primary" disabled>Registrarse</button> 
           </div> 
-
         </div>
         
       </header> 
     </div>
   </section>
 
-    <!-- PROPERTIES -->
 
-<div id="properties-list"></div>
-  <div class="album py-5 bg-body-tertiary">  
-    <div class="container"> 
+<!-- ====== MAPA + LISTA LADO A LADO ====== -->
+<section class="container-fluid">
+  <div class="row g-2">
+
+    <div class="filter-section">
+      <div class="search-bar">
+         <input type="text" id="searchLocation" placeholder="Ciudad, fraccionamiento o colonia">
+        
+          <select id="priceFilter">
+            <option value="">Precio</option>
+            <option value="1000000">Hasta $1,000,000</option>
+            <option value="2000000">Hasta $2,000,000</option>
+            <option value="5000000">Hasta $5,000,000</option>
+            <option value="10000000">Hasta $10,000,000</option>
+            <option value="20000000">Hasta $20,000,000</option>
+          </select>
+        
+          <select id="bedsFilter">
+            <option value="">Recamaras</option>
+            <option value="1">1+</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+          </select>
+        
+          <select id="typeFilter">
+            <option value="">Tipo de propiedad</option>
+            <option value="casa">Casa</option>
+            <option value="departamento">Departamento</option>
+            <option value="terreno">Terrenos</option>
+            <option value="nave">Naves industriales</option>
+            <option value="rancho">Rancho</option>
+            <option value="edificio">Edificio</option>
+            
+          </select>
        
-       <h3>Compra de manera segura.</h3>
-         <br>
+          <button onclick="applyFilters()">Buscar</button>
+      </div>
+    </div>
+    
+    <!-- Columna del mapa -->
+    <div class="col-12 col-lg-6 map-col ">
+      <div class="map-wrapper ">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> 
-        <div class="col"> 
-          <div class="card shadow-sm"> 
-          <a href="property1.html?id=1"><img src="Material/Fracc. Ojocaliente 1/ojo.jpg" alt="prop1" class="propiedad1"></a>
-          <div class="card-body"> 
-            <div class="d-flex justify-content-between align-items-center px-3 pt-2">
-              <p>3 habitaciones · 2 baños 
-              <div class="badge bg-success text-white fs-7 px3 py-2">VENTA</div>
-            </div>
-            <p class="card-text">  Fracc. Ojocaliente 1, Aguascalientes, Ags
-              <br>  $1,550,000 
-            </p> 
-            <div class="d-flex justify-content-between align-items-center"> 
-              <div class="btn-group"> 
-                <a type="button" class="btn btn-sm btn-outline-secondary" href="https://wa.me/524492335540" target="_blankp">Whatsapp</a> 
-              </div> 
-              <a type="button" class="btn btn-sm btn-outline-secondary" href="property1.html?id=1" >Más detalles</a>
-            </div> 
-          </div> 
-        </div> 
-      </div> 
-
-      <div class="col"> 
-        <div class="card shadow-sm"> 
-          <a href="property1.html?id=2"><img src="Material/FraccHaciendaSanMarcos/haciendasm.jpg" alt="Casalux" class="propiedad2"></a>
-          <div class="card-body"> 
-            <div class="d-flex justify-content-between align-items-center px-3 pt-2">
-              <p> 3 habitaciones · 1 baños 
-              <div class="badge bg-success text-white fs-7 px3 py-2">VENTA</div>
-            </div>
-            <p class="card-text "> Fracc. San Marcos, Aguascalientes, Ags.
-              <br> $1,100,000 
-            </p> 
-            <div class="d-flex justify-content-between align-items-center"> 
-              <div class="btn-group"> 
-                <a type="button" class="btn btn-sm btn-outline-secondary" href="https://wa.me/524492335540" target="_blankp">Whatsapp</a> 
-              </div> 
-              <a type="button" class="btn btn-sm btn-outline-secondary" href="property1.html?id=2" >Más detalles</a>
-            </div> 
-          </div> 
-        </div> 
-      </div> 
-
-      <div class="col"> 
-        <div class="card shadow-sm"> 
-          <a href="property1.html?id=3"><img src="Material/Fracc.CasaBlanca/CasaB.jpg" alt="Casalux" class="propiedad3"></a>
-          <div class="card-body"> 
-            <div class="d-flex justify-content-between align-items-center px-3 pt-2">
-              <p>2 habitaciones · 1 baño 
-              <div class="badge bg-success text-white fs-7 px3 py-2">VENTA</div>
-            </div>
-            <p class="card-text"> Casa blanca, Aguascalientes, Ags
-              <br>  $1,700,000 
-            </p> 
-            <div class="d-flex justify-content-between align-items-center"> 
-              <div class="btn-group"> 
-                <a type="button" class="btn btn-sm btn-outline-secondary" href="https://wa.me/524492335540" target="_blankp">Whatsapp</a> 
-              </div> 
-              <a type="button" class="btn btn-sm btn-outline-secondary" href="property1.html?id=3" >Más detalles</a>
-            </div> 
-          </div> 
-        </div> 
-      </div> 
-      
-      <div class="col"> 
-        <div class="card shadow-sm"> 
-          <a href="property1.html?id=4"><img src="Material/RanchoLasBorregas/RanchoBorregas.jpg" alt="Casalux" class="propiedad4" ></a>
-          <div class="card-body"> 
-            <div class="d-flex justify-content-between align-items-center px-3 pt-2">
-              <p>4 habitaciones · 3 baños 
-              <div class="badge bg-success text-white fs-7 px3 py-2">VENTA</div>
-            </div>
-            <p class="card-text"> Rancho las borregas, Aguascalientes.
-              <br> $19,000,000 
-            </p> 
-            <div class="d-flex justify-content-between align-items-center"> 
-              <div class="btn-group"> 
-                <a type="button" class="btn btn-sm btn-outline-secondary" href="https://wa.me/524492335540" target="_blankp">Whatsapp</a> 
-              </div> 
-              <a type="button" class="btn btn-sm btn-outline-secondary" href="property1.html?id=4" >Más detalles</a>
-            </div> 
-          </div> 
-        </div> 
-      </div> 
-
-      <div class="col"> 
-        <div class="card shadow-sm"> 
-          <a href="property1.html?id=5"><img src=" Material/EdificioZapata/EdificioZapata.jpg" alt="Casalux" class="propiedad5"></a>
-          <div class="card-body"> 
-            <div class="d-flex justify-content-between align-items-center px-3 pt-2">
-              <p>7 habitaciones · 7 baños 
-              <div class="badge bg-success text-white fs-7 px3 py-2">VENTA</div>
-            </div>
-            <p class="card-text"> Calle Gral. Emiliano Zapata, Ags
-              <br> $3,650,000
-            </p> 
-            <div class="d-flex justify-content-between align-items-center"> 
-              <div class="btn-group"> 
-                <a type="button" class="btn btn-sm btn-outline-secondary" href="https://wa.me/524492335540" target="_blankp">Whatsapp</a> 
-              </div> 
-              <a type="button" class="btn btn-sm btn-outline-secondary" href="property1.html?id=5" >Más detalles</a>
-            </div> 
-          </div> 
-        </div> 
-      </div> 
-
-      <div class="col"> 
-        <div class="card shadow-sm"> 
-          <a href="property1.html?id=6"><img src="Material/LomasDelChapulin/LomasDelChapulin1.jpg" alt="Casalux" class="propiedad6"></a>
-          <div class="card-body"> 
-            <div class="d-flex justify-content-between align-items-center px-3 pt-2">
-              <p>2 habitaciones · 1 baño  
-              <div class="badge bg-success text-white fs-7 px3 py-2">VENTA</div>
-            </div>
-            <p class="card-text"> Fracc. Lomas del chapulin, Ags
-              <br> $650,000 
-            </p> 
-            <div class="d-flex justify-content-between align-items-center"> 
-              <div class="btn-group"> 
-                <a type="button" class="btn btn-sm btn-outline-secondary" href="https://wa.me/524492335540" target="_blankp">Whatsapp</a> 
-              </div> 
-              <a type="button" class="btn btn-sm btn-outline-secondary" href="property1.html?id=6" >Más detalles</a>
-            </div> 
-          </div> 
-        </div> 
-      </div> 
-
-      <div class="col"> 
-        <div class="card shadow-sm"> 
-          <a href="property1.html?id=8"><img src="Material/CanadaHonda/CanadaHonda.jpg" alt="Casalux" class="propiedad8"></a>
-          <div class="card-body"> 
-            <div class="d-flex justify-content-between align-items-center px-3 pt-2">
-              <p>0 habitaciones · 0 baños 
-              <div class="badge bg-success text-white fs-7 px3 py-2">VENTA</div>
-            </div>
-            <p class="card-text"> Cañada Honda, Aguascalientes, Ags
-              <br> 4,200 MXN por m² 
-            </p> 
-            <div class="d-flex justify-content-between align-items-center"> 
-              <div class="btn-group"> 
-                <a type="button" class="btn btn-sm btn-outline-secondary" href="https://wa.me/524492335540" target="_blankp">Whatsapp</a> 
-              </div> 
-              <a type="button" class="btn btn-sm btn-outline-secondary" href="property1.html?id=8" >Más detalles</a>
-            </div> 
-          </div> 
-        </div> 
-      </div>    
-
-       
+        <div id="geocoder" class="geocoder"></div>
+        <div id="map"></div>
 
       </div>
+    </div>
+
+
+    <!------------ PROPIEDADES ------------>
+    <div class="col-12 col-lg-6"> <!--col-12 indica tamaño maximo y lg-6 cuanto abarca este div-->
+      <div class="list-wrapper">
+        
+       <h3 class="title-prop">Propiedades en venta en Aguascalientes.</h3>
+          <div class="row row-cols-1 row-cols-sm-2 g-3" id="properties-list"> 
+
+        <!-- <div class="col"> 
+          <a href="property1.html?id=1" class="text-decoration-none">
+            <div class="card shadow-sm"> 
+              <img src="Material/FraccHaciendaSanMarcos/haciendasm.jpg" alt="prop1" class="propiedad1">
+              <div class="card-body"> 
+                <div class="d-flex justify-content-between align-items-center px-3 pt-2">
+                  <p class="fw-bold fs-4 mb-0">$1,100,000 </p>
+                  <div class="badge bg-success text-white fs-7 px3 py-2">VENTA</div>
+                </div>
+                  <p class="subtitle mb-1">3 recamaras · 1 baños  </p> 
+                  <p class="mb-0">Fracc. San Marcos, Aguascalientes. </p>
+              </div> 
+            </div> 
+          </a>
+        </div>
+
+        <div class="col"> 
+          <a href="property1.html?id=4" class="text-decoration-none">
+            <div class="card shadow-sm"> 
+              <img src="Material/RanchoLasBorregas/RanchoBorregas.jpg" alt="prop1" class="propiedad1">
+              <div class="card-body"> 
+                <div class="d-flex justify-content-between align-items-center px-3 pt-2">
+                  <p class="fw-bold fs-4 mb-0">$19,000,000 </p>
+                  <div class="badge bg-success text-white fs-7 px3 py-2">VENTA</div>
+                </div>
+                  <p class="subtitle mb-1">4 recamaras · 3 baños </p> 
+                  <p class="mb-0">Rancho las borregas, Aguascalientes, Ags. </p>
+              </div> 
+            </div> 
+          </a>
+        </div>
+
+        <div class="col"> 
+          <a href="property1.html?id=6" class="text-decoration-none">
+            <div class="card shadow-sm"> 
+              <img src="Material/LomasDelChapulin/LomasDelChapulin1.jpg" alt="prop1" class="propiedad1">
+              <div class="card-body"> 
+                <div class="d-flex justify-content-between align-items-center px-3 pt-2">
+                  <p class="fw-bold fs-4 mb-0">$650,000</p>
+                  <div class="badge bg-success text-white fs-7 px3 py-2">VENTA</div>
+                </div>
+                  <p class="subtitle mb-1">2 recamaras · 1 baño</p> 
+                  <p class="mb-0">Fracc. Lomas del chapulin, Ags.</p>
+              </div> 
+            </div> 
+          </a>
+        </div>
+
+        <div class="col"> 
+          <a href="property1.html?id=8" class="text-decoration-none">
+            <div class="card shadow-sm"> 
+              <img src="Material/CanadaHonda/CanadaHonda.jpg" alt="prop1" class="propiedad1">
+              <div class="card-body"> 
+                <div class="d-flex justify-content-between align-items-center px-3 pt-2">
+                  <p class="fw-bold fs-4 mb-0">4,200 MXN por m²</p>
+                  <div class="badge bg-success text-white fs-7 px3 py-2">VENTA</div>
+                </div>
+                  <p class="subtitle mb-1">0 recamaras · 0 baños</p> 
+                  <p class="mb-0">Cañada Honda, Aguascalientes, Ags.</p>
+              </div> 
+            </div> 
+          </a>
+        </div> -->
+
+
+      </div>
+    </div>
+
   </div>
-</div>
+</section>
 
 
 <!---------- FOOTER ---------->
   
-<section id="title" class="gradient-background">
+<!-- <section id="title" class="gradient-background">
   <div class="container"> 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top"> 
       
@@ -273,10 +238,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     </footer> 
   </div>
-</section>
+</section> -->
   
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="JS/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+    <!-- MAPBOX JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+    <!-- Mapbox Geocoder -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.1/mapbox-gl-geocoder.min.js"></script>
+
+    <script src="JS/map.js" defer></script>
+
   </body>
 </html>
