@@ -48,12 +48,12 @@
     },
     {
       "id": 3,
-      "titleName": "",
-      "subtitle": "",
-      "images": ["", "", "", "", "", "", "", ""],
+      "titleName": "BODEGA EN RENTA SOBRE SEGUNDO ANILLO PONINETE AGS",
+      "subtitle": "Bodega en segundo anillo poniente.",
+      "images": ["BRFundicionII/BRFundicionII.jpg", "BRFundicionII/BRFundicionII1.jpg", "BRFundicionII/BRFundicionII2.jpg", "BRFundicionII/BRFundicionII3.jpg", "BRFundicionII/BRFundicionII4.jpg"],
 
       "tipoTransaction": "EN RENTA",
-      "price": "",
+      "price": "$50,000 MXN",
       "TipoProperty": "Bodega",
       "ground": "m²",
       "construction": "m²",
@@ -61,12 +61,12 @@
       "payment": "Contado y crédito Fovissste.",
       "servicios": "Agua · Drenaje · Luz",
 
-      "recamaras": 3,
-      "banos": 1,
+      "recamaras": 0,
+      "banos": 2,
       "carros": 1,
 
-      "description": "🏭 Bodega en Renta al Norte de la Ciudad – Excelente Ubicación<br><br>Bodega disponible en renta cerca de Av. Independencia, ubicada atrás de Flex, en una zona estratégica con fácil acceso a vialidades principales.<br><br>📍 Ubicación: Norte de la ciudad<br>📐 Superficie: 60 x 19 metros<br>🏢 Cuenta con área de oficinas<br>🚚 Ideal para almacén, logística, taller o distribución<br><br>💰 Renta mensual: $50,000<br><br>Excelente opción para empresas que buscan ubicación estratégica y amplio espacio de trabajo.",
-      "map": "",
+      "description": "🏭 Bodega en Renta sobre Segundo Anillo Poniente – Excelente Ubicación<br><br>Bodega disponible en renta sobre Av. Aguascalientes Poniente (Segundo Anillo), ubicada en Fraccionamiento Fundición II, una zona estratégica con gran conectividad y fácil acceso para transporte y logística.<br><br>📍 Dirección: Av. Aguascalientes Poniente 1515, Fracc. Fundición II, Aguascalientes, Ags.<br>🚚 Ubicación estratégica sobre Segundo Anillo Poniente<br>🚻 Cuenta con 2 baños<br><br>💰 Renta mensual: $50,000<br><br>Ideal para almacén, distribución, taller o actividad industrial gracias a su excelente ubicación y fácil acceso a vialidades principales.<br><br>📩 Para más información o agendar una visita, envía mensaje.",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d925.4177351956275!2d-102.3180978304515!3d21.90874364299773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429eee41c647d93%3A0xf4c766b9024e04df!2sAv.%20Aguascalientes%20Pte.%20130%2C%20Residencial%20del%20Valle%20I%2C%2020130%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1773001601925!5m2!1ses-419!2smx",
       "video": ""
     },
     {
@@ -92,6 +92,28 @@
       "video": ""
     },
     {
+      "id": 5,
+      "titleName": "BODEGA EN RENTA EN SALIDA SAN LUIS",
+      "subtitle": "En renta bodega en salida San Luis Potosí",
+      "images": ["BRSalidaSanLuis/BRSalidaSanLuis.png"],
+
+      "tipoTransaction": "EN RENTA",
+      "price": "$22,000 MXN",
+      "TipoProperty": "Bodega",
+      "ground": "",
+      "construction": " m²",
+      "ocupation": "Inmediata",
+      "servicios": "Agua · Drenaje · Luz",
+
+      "recamaras": 0,
+      "banos": 1,
+      "carros": 1,
+
+      "description": "🏭 Bodega en Renta – Salida a San Luis Potosí<br><br>Bodega disponible en renta en excelente ubicación sobre la salida a San Luis Potosí, ideal para actividades industriales, almacenamiento o logística.<br><br>📐 Superficie: 800 m²<br>📍 Ubicación: Salida a San Luis Potosí, Aguascalientes<br>🚚 Fácil acceso para transporte y distribución<br><br>💰 Renta mensual: $22,000<br><br>Espacio amplio y funcional, perfecto para almacén, taller o centro de distribución.<br><br>📩 Para más información o agendar una visita, envía mensaje.",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.687164235827!2d-102.25118972526276!3d21.869599358369964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429f203dd065069%3A0xe9cdc7272f717027!2sM%C3%A9xico%2070%20115%2C%20Salto%20de%20Ojocaliente%2C%2020341%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1773002309987!5m2!1ses-419!2smx",
+      "video": ""
+    },
+    {
       "id": 6,
       "titleName": "DEPARTAMENTOS EN VENTA EN LOMAS DEL CHAPULIN, AGUASCALIENTES",
       "subtitle": "Fracc. Lomas del chapulin, Ags",
@@ -112,28 +134,6 @@
       "description": "🏡 ¡Aprovecha!<br><br>Departamentos Nuevos al Oriente de la Ciudad, cerca de la Línea Verde<br><br>✨ Vive en una zona con excelente conectividad y plusvalía. Ideal para familias o inversión.<br>📐 Superficie construida: 57.85 m²<br>🛏️ 2 recámaras amplias<br>🛁 1 baño completo<br>🚗 Cajón de estacionamiento incluido<br>✅ Tramitamos tu crédito INFONAVIT sin costo<br><br>📍Ubicación estratégica, cerca de transporte, escuelas y comercios.<br><br>📞 ¡Contáctanos hoy mismo y asegura tu nuevo hogar!",
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7405.90667705895!2d-102.25074780974558!3d21.85933547750024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429f20e52bddca1%3A0xb1af163d39fd5f8a!2sLomas%20del%20Chapul%C3%ADn%2C%2020263%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1764734860427!5m2!1ses-419!2smx",
       "video": "https://www.tiktok.com/@mikearells/video/7567894521602673940"
-    },
-    {
-      "id": 7,
-      "titleName": "CONSULTORIOS EN RENTA EN EL DORADO, AGUASCALIENTES",
-      "subtitle": "Fracc. El Dorado, 1ra Secc, Aguascalientes",
-      "images": ["ConsultDorado/ConsulDorado.jpg", "ConsultDorado/ConsulDorado1.jpg", "ConsultDorado/ConsulDorado2.jpg", "ConsultDorado/ConsulDorado3.jpg", "ConsultDorado/ConsulDorado4.jpg"],
-
-      "tipoTransaction": "EN RENTA",
-      "price": "$25,000 MXN c/uno",
-      "TipoProperty": "Consultorio",
-      "ground": "160 m² (8 x 20 m)",
-      "construction": "105 m²",
-      "ocupation": "Inmediata",
-      "servicios": "Agua · Drenaje · Luz",
-
-      "recamaras": 4,
-      "banos": 2,
-      "carros": 3,
-
-      "description": "🏥 Consultorios en renta– Zona Dr. G. Ramírez Valdez, Aguascalientes.<br><br>¡Listos para operar y ubicados en zona de uso mixto!<br>📍 Dirección: Guillermo Ramírez Valdez #112<br>📐 Terreno: 160 m² (8 x 20 m)<br>🏗️ Construcción: 105 m²<br>🔹 Distribución:<br><br>➡️Área de recepción o sala de espera<br>➡️Espacios funcionales para atención médica.<br>➡️Estacionamiento de 3 x 11 m<br><br>🔧 Equipamiento:<br><br>✅ Instalaciones para agua fría y caliente<br>✅ Conexiones listas para consultorios médicos<br>✅ Cámaras de seguridad<br>✅ Calentador solar<br><br>💧 Agua: $429 (tarifa mixta)<br>📄 Uso de suelo: medico.<br>💰 Precio: $25,000<br>✅ Ideal para médicos, terapeutas o profesionales de la salud que buscan establecerse en una zona accesible y con potencial de crecimiento.",
-      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.9165159059708!2d-102.306543025263!3d21.860755658684795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ec2d0610ba89%3A0xcc3451912fa5291a!2sDr.%20G.%20Ram%C3%ADrez%20Valdez%2C%20El%20Dorado%201ra%20Secc%2C%2020235%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1763930274963!5m2!1ses-419!2smx",
-      "video": "https://www.tiktok.com/@mikearells/video/7563364291609480468"
     },
     {
       "id": 8,
