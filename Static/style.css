@@ -562,14 +562,106 @@ html {
 /**************** NOTICIAS Y TENDENCIAS ******************/
 
 .NewsTitle{
-  text-align: center;
   margin-top: 30px;
   font-family: 'Times New Roman', Times, serif;
 }
 
-.prox{
+
+.containerNews{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 20%;
+
+  max-width:1200px;
+  margin:auto;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+/* NewsTitle*/
+.row1{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.left{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  height: 80px;
+}
+
+.row3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/* NAVBAR DE NEWS  */
+.navNews{
+  display: flex;
   justify-content: center;
-  height: 500px;
+}
+
+.navbarNews{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  border-bottom:1px solid #ddd;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.menu{
+  display:flex;
+  gap:30px;
+  
+  justify-content:space-evenly;
+  width:100%;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#222;
+  font-size:14px;
+  letter-spacing:0.5px;
+  padding-bottom:10px;
+}
+
+.menu a:hover{
+  color:black;
+}
+
+.menu .active{
+  border-bottom:3px solid black;
+}
+
+/* .search{
+  font-size:20px;
+  cursor:pointer;
+} */
+
+/* Underlying animado */
+.menu a{
+  position:relative;
+}
+
+.menu a::after{
+  content:"";
+  position:absolute;
+  width:0;
+  height:2px;
+  background:black;
+  bottom:0;
+  left:0;
+  transition:0.3s;
+}
+
+.menu a:hover::after{
+  width:100%;
+}
+
+.trends{
+  display: flex;
+  justify-content: right;
 }
