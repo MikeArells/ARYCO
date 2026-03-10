@@ -246,4 +246,48 @@
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12080.374399280168!2d-102.31666035048205!3d21.936061629869194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef13ae5e5b7d%3A0xef38c5419f9936e1!2sReal%20del%20Molino!5e0!3m2!1ses-419!2smx!4v1769323341585!5m2!1ses-419!2smx",
       "video": ""
     }
+    ,{
+      "id": 12,
+      "titleName": "CASA EN VENTA EN JESÚS TERÁN, AGUASCALIENTES",
+      "subtitle": "Fracc. Jesús Terán, Aguascalientes",
+      "images": ["CV_JesusTeran/JesusTeran.jpg","CV_JesusTeran/JesusTeran1.jpg","CV_JesusTeran/JesusTeran2.jpg","CV_JesusTeran/JesusTeran3.jpg","CV_JesusTeran/JesusTeran4.jpg","CV_JesusTeran/JesusTeran5.jpg","CV_JesusTeran/JesusTeran6.jpg","CV_JesusTeran/JesusTeran7.jpg","CV_JesusTeran/JesusTeran8.jpg","CV_JesusTeran/JesusTeran9.jpg"],
+
+      "tipoTransaction": "EN VENTA",
+      "price": "$2,500,000 MXN",
+      "TipoProperty": "Casa",
+      "ground": " m²",
+      "construction": " m²",
+      "ocupation": "Inmediata",
+      "servicios": "Agua · Drenaje · Luz",
+
+      "recamaras": 3,
+      "banos": 2,
+      "carros": 1,
+
+      "description": "🏡 Casa en Venta – Excelente Ubicación en Jesus Teran<br><br>Entre Primer Anillo y Av. Paseo de la CruzDisfruta de una casa cómoda, funcional y con todos los servicios a la mano. Ideal para familias o como inversión.<br><br>✨ Características:<br><br>3 recámaras con buen tamaño<br>2 baños completos<br>Cochera techada con portón automático para 1 auto<br>Cocina equipada en excelente estado<br>Calentador solar para ahorro de energía<br>Aljibe con buena capacidad<br>Piso laminado en áreas principales<br>Cuarto de servicio o espacio de almacenamiento<br><br>📍 Ubicación privilegiada, cerca de vías rápidas, comercios, escuelas y transporte.",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1617.4383155069145!2d-102.27136195976787!3d21.872667975007282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef550f0f6e17%3A0x979e5c7f724ab0d3!2sWestern%20Union!5e0!3m2!1ses!2smx!4v1773160904464!5m2!1ses!2smx",
+      "video": ""
+    }
+    ,{
+      "id": 13,
+      "titleName": "CASA EN VENTA EN VNSA, AGUASCALIENTES",
+      "subtitle": "Fracc. Villas de nuestra señora sector Guadalupe, Aguascalientes",
+      "images": ["CV_JesusTeran/JesusTeran.jpg","CV_JesusTeran/JesusTeran1.jpg","CV_JesusTeran/JesusTeran2.jpg","CV_JesusTeran/JesusTeran3.jpg","CV_JesusTeran/JesusTeran4.jpg","CV_JesusTeran/JesusTeran5.jpg","CV_JesusTeran/JesusTeran6.jpg","CV_JesusTeran/JesusTeran7.jpg","CV_JesusTeran/JesusTeran8.jpg","CV_JesusTeran/JesusTeran9.jpg"],
+
+      "tipoTransaction": "EN VENTA",
+      "price": "$1,050,000 MXN",
+      "TipoProperty": "Casa",
+      "ground": " m²",
+      "construction": " m²",
+      "ocupation": "Inmediata",
+      "servicios": "Agua · Drenaje · Luz",
+
+      "recamaras": 3,
+      "banos": 2,
+      "carros": 1,
+
+      "description": "¡Oportunidad! Casa en venta en Villas Sector Guadalupe, Excelente opción para invertir o terminar a tu gusto. La propiedad cuenta con una ubicación estratégica y gran potencial de crecimiento.<br><br>🔥 Características principales:<br><br>Planta baja completamente habitable:<br>✅2 recámaras<br>✅1 baño<br><br>Segundo nivel en obra negra, proyectado para:<br>✅2 recámaras adicionales<br>✅1 baño completo<br><br>Ubicación privilegiada:<br>✅En contraesquina de la secundaria<br>✅A solo 2 cuadras del mercado<br>✅Cuenta con todos los servicios cerca<br><br>Ideal para ampliarla según tus necesidades, vivirla o convertirla en propiedad de renta. ",
+      "map": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1850.5372361540055!2d-102.25878188817363!3d21.931688291816634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDU1JzU0LjciTiAxMDLCsDE1JzMwLjMiVw!5e0!3m2!1ses!2smx!4v1773161975200!5m2!1ses!2smx",
+      "video": ""
+    }
   ]
