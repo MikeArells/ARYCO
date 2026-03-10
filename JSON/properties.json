@@ -136,6 +136,28 @@
       "video": "https://www.tiktok.com/@mikearells/video/7567894521602673940"
     },
     {
+      "id": 7,
+      "titleName": "DEPARTAMENTO EN RENTA EN ZONA CENTRO, GRAL. EMILIANO ZAPATA",
+      "subtitle": "Gral. Emiliano Zapata, Barrio de Guadalupe Ags",
+      "images": ["DREmilianoZapata5/EmilianoZapataV.jpg", "DREmilianoZapata5/EmilianoZapataV1.jpg", "DREmilianoZapata5/EmilianoZapataV2.jpg","DREmilianoZapata5/EmilianoZapataV3.jpg"],
+
+      "tipoTransaction": "EN RENTA",
+      "price": "$4,500 MXN",
+      "TipoProperty": "Departamento",
+      "ground": "24 m²",
+      "construction": "24 m²",
+      "ocupation": "Inmediata",
+      "servicios": "Agua · Drenaje · Luz",
+
+      "recamaras": 1,
+      "banos": 1,
+      "carros": 0,
+
+      "description": "Se renta departamento estilo estudio en el centro, excelente ubicación❗❗❗<br><br>VIDEO:<br>https://www.tiktok.com/@mikearells/video/7598625655298723090<br><br>✅ Renta $ 4,500 más depósito<br><br>✅ Domicilio: Gral. Emiliano Zapata, zona centro<br>✅ cerca de la catedral<br>✅ 1 recámara con closet<br>✅ calentador solar y de paso.<br>✅ 1 baño completo<br>✅ Ideal para estudiantes.<br>✅ departamento ejecutivo (individual).<br>✅ No mascotas<br>✅ Contrato a 12 meses  <br>✅ Los gastos de servicios se dividen entre los 7 departamentos.<br><br>     REQUSITOS:<br>✅ INE del interesad@.<br>✅ INE del aval.<br>✅ Predial del aval con propiedad sin gravamen.",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.36532626347!2d-102.30296942653551!3d21.882003557930684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee62abd490c3%3A0x54cfc3622c037ab6!2sGral.%20Emiliano%20Zapata%20122%2C%20Zona%20Centro%2C%2020000%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses!2smx!4v1773154585948!5m2!1ses!2smx",
+      "video": "https://www.tiktok.com/@arycobr/video/7615021843413519646"
+    },
+    {
       "id": 8,
       "titleName": "TERRENO EN VENTA EN CAÑADA HONDAD, AGUASCALIENTES",
       "subtitle": "Cañada Honda, Aguascalientes",
