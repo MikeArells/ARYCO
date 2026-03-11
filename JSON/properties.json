@@ -290,4 +290,27 @@
       "map": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1850.5372361540055!2d-102.25878188817363!3d21.931688291816634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDU1JzU0LjciTiAxMDLCsDE1JzMwLjMiVw!5e0!3m2!1ses!2smx!4v1773161975200!5m2!1ses!2smx",
       "video": ""
     }
+    ,{
+      "id": 14,
+      "titleName": "CASA EN VENTA EN LA COLONIA EL LLANO, AGUASCALIENTES",
+      "subtitle": "Fracc. Almena colonia el llano, Aguascalientes cerca de tercer anillo",
+      "images": ["CV_AlmenaAtalaya/AlmenaAtalaya.jpg","CV_AlmenaAtalaya/AlmenaAtalaya1.jpg","CV_AlmenaAtalaya/AlmenaAtalaya2.jpg","CV_AlmenaAtalaya/AlmenaAtalaya3.jpg","CV_AlmenaAtalaya/AlmenaAtalaya4.jpg","CV_AlmenaAtalaya/AlmenaAtalaya5.jpg","CV_AlmenaAtalaya/AlmenaAtalaya6.jpg","CV_AlmenaAtalaya/AlmenaAtalaya7.jpg"],"CV_AlmenaAtalaya/AlmenaAtalaya8.jpg","CV_AlmenaAtalaya/AlmenaAtalaya9.jpg","CV_AlmenaAtalaya/AlmenaAtalaya10.jpg","CV_AlmenaAtalaya/AlmenaAtalaya11.jpg",
+
+      "tipoTransaction": "EN VENTA",
+      "price": "$3,500,000 MXN",
+      "TipoProperty": "Casa",
+      "ground": " m²",
+      "construction": " m²",
+      "ocupation": "Inmediata",
+      "servicios": "Agua · Drenaje · Luz",
+
+      "recamaras": 3,
+      "banos": 2,
+      "carros": 1,
+
+      "description": "¡Oportunidad! Casa en venta en Villas Sector Guadalupe, Excelente opción para invertir o terminar a tu gusto. La propiedad cuenta con una ubicación estratégica y gran potencial de crecimiento.<br><br>🔥 Características principales:<br><br>Planta baja completamente habitable:<br>✅2 recámaras<br>✅1 baño<br><br>Segundo nivel en obra negra, proyectado para:<br>✅2 recámaras adicionales<br>✅1 baño completo<br><br>Ubicación privilegiada:<br>✅En contraesquina de la secundaria<br>✅A solo 2 cuadras del mercado<br>✅Cuenta con todos los servicios cerca<br><br>Ideal para ampliarla según tus necesidades, vivirla o convertirla en propiedad de renta. ",
+      "map": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1850.5372361540055!2d-102.25878188817363!3d21.931688291816634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDU1JzU0LjciTiAxMDLCsDE1JzMwLjMiVw!5e0!3m2!1ses!2smx!4v1773161975200!5m2!1ses!2smx",
+      "video": ""
+    }
+    
   ]
