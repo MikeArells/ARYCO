@@ -324,5 +324,73 @@
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d925.1689009343875!2d-102.32279593053094!3d21.947019042661584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef69b122aa0d%3A0xbb602affba9b925!2sC.%20Jos%C3%A9%20L%C3%B3pez%20Portillo%20203%2C%2020983%20El%20Llano%2C%20Ags.!5e0!3m2!1ses!2smx!4v1773274100293!5m2!1ses!2smx",
       "video": ""
     }
-    
+    ,{
+      "id": 15,
+      "titleName": "CASA EN VENTA EN EL FRACC. LAS ARBOLEDAS, AGUASCALIENTES",
+      "subtitle": "Fracc. las Arboledas, calle libertad Aguascalientes cerca de 1° anillo",
+      "images": [
+          "CV_Libertad/Libertad.jpg",
+          "CV_Libertad/Libertad1.jpg",
+          "CV_Libertad/Libertad2.jpg",
+          "CV_Libertad/Libertad3.jpg",
+          "CV_Libertad/Libertad4.jpg",
+          "CV_Libertad/Libertad5.jpg",
+          "CV_Libertad/Libertad6.jpg",
+          "CV_Libertad/Libertad7.jpg",
+          "CV_Libertad/Libertad8.jpg",
+          "CV_Libertad/Libertad9.jpg",
+          "CV_Libertad/Libertad10.jpg",
+          "CV_Libertad/Libertad11.jpg",
+          "CV_Libertad/Libertad12.jpg",
+          "CV_Libertad/Libertad13.jpg",
+          "CV_Libertad/Libertad14.jpg",
+          "CV_Libertad/Libertad15.jpg"],
+
+      "tipoTransaction": "EN VENTA",
+      "price": "$12,500,000 MXN",
+      "TipoProperty": "Casa",
+      "ground": "525m² (15x35) ",
+      "construction": "435m²",
+      "ocupation": "Inmediata",
+      "servicios": "Agua · Drenaje · Luz",
+
+      "recamaras": 3,
+      "banos": 3,
+      "carros": 3,
+
+      "description": "Casa en Venta – Prol. Libertad #1605, Fracc. Las Arboledas<br><br>✨ Amplia y exclusiva propiedad en una de las mejores zonas ✨<br><br>📍 Ubicación: Fracc. Las Arboledas<br>📐 Terreno: 525 m² (15 × 35 m)<br>🏗 Construcción: 435 m²<br>💰 Precio de venta: $12,500,000",
+      "map": "https://www.google.com/maps/embed?pb=!3m2!1ses!2smx!4v1773281823599!5m2!1ses!2smx!6m8!1m7!1sP39oJn0MStG3yUPi3JFiRg!2m2!1d21.89965397706973!2d-102.3010907657873!3f54.60710232871932!4f-5.718183440004978!5f0.7820865974627469",
+      "video": ""
+    }
+    ,{
+      "id": 16,
+          "titleName": "TERRENO EN VENTA EN LA COL DEL TRABAJO, AGUASCALIENTES",
+      "subtitle": "Col del trabajo, calle Rene Descartes cerca de 1° anillo",
+      "images": [
+          "TV_ReneDescartes/TerrenoReneDescartes.jpg",
+          "TV_ReneDescartes/TerrenoReneDescartes1.jpg",
+          "TV_ReneDescartes/TerrenoReneDescartes2.jpg",
+          "TV_ReneDescartes/TerrenoReneDescartes3.jpg",
+          "TV_ReneDescartes/TerrenoReneDescartes4.jpg",
+          "TV_ReneDescartes/TerrenoReneDescartes5.jpg",
+          "TV_ReneDescartes/TerrenoReneDescartes6.jpg",
+          "TV_ReneDescartes/TerrenoReneDescartes7.jpg"
+          ],
+
+      "tipoTransaction": "EN VENTA",
+      "price": "$6,400,000 MXN",
+      "TipoProperty": "Terreno",
+      "ground": "900m² (30x30)",
+      "construction": "0m²",
+      "ocupation": "Inmediata",
+      "servicios": "Agua · Drenaje · Luz",
+
+      "recamaras": 0,
+      "banos": 0,
+      "carros": 0,
+
+      "description": "¡Gran oportunidad! Terreno en venta en ubicación privilegiada<br><br>✅Superficie: 900 m² (30 x 30)<br>✅Ubicación estratégica: A solo 2 cuadras del Primer Anillo Oriente, detrás del Banorte<br><br>Características:<br>✅Esquina con calle de doble sentido<br>✅Banquetas amplias<br><br>Ideal para:<br>✅Torre de departamentos<br>✅Nave industrial o bodega<br>✅Estacionamiento<br>✅Proyectos comerciales<br><br>¡Aprovecha esta excelente ubicación para tu próximo desarrollo! Contáctanos para más información.",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.195770190352!2d-102.27456352653523!3d21.888535857697853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee13e1fb9891%3A0xda46abf498366523!2sRen%C3%A9%20Descartes%20416%2C%20Col%20del%20Trabajo%2C%2020180%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses!2smx!4v1773281148405!5m2!1ses!2smx",
+      "video": ""
+    }
   ]
