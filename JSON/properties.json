@@ -393,4 +393,84 @@
       "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.195770190352!2d-102.27456352653523!3d21.888535857697853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee13e1fb9891%3A0xda46abf498366523!2sRen%C3%A9%20Descartes%20416%2C%20Col%20del%20Trabajo%2C%2020180%20Aguascalientes%2C%20Ags.!5e0!3m2!1ses!2smx!4v1773281148405!5m2!1ses!2smx",
       "video": ""
     }
+    ,{
+      "id": 17,
+          "titleName": "CASA EN VENTA EN COL EL LLANO, AGUASCALIENTES",
+      "subtitle": "Col el llano, cerca de 3° anillo norte",
+      "images": [
+          "CV_AlmenaAlcazar/AlmenaAlcazar.jpeg",
+          "CV_AlmenaAlcazar/AlmenaAlcazar1.jpeg",
+          "CV_AlmenaAlcazar/AlmenaAlcazar2.jpeg",
+          "CV_AlmenaAlcazar/AlmenaAlcazar3.jpeg",
+          "CV_AlmenaAlcazar/AlmenaAlcazar4.jpeg",
+          "CV_AlmenaAlcazar/AlmenaAlcazar5.jpeg",
+          "CV_AlmenaAlcazar/AlmenaAlcazar6.jpeg",
+          "CV_AlmenaAlcazar/AlmenaAlcazar7.jpeg",
+          "CV_AlmenaAlcazar/AlmenaAlcazar8.jpeg",
+          "CV_AlmenaAlcazar/AlmenaAlcazar9.jpeg"
+          ],
+
+      "tipoTransaction": "EN VENTA",
+      "price": "$4,000,000 MXN",
+      "TipoProperty": "CASA",
+      "ground": "139m²",
+      "construction": "183m²",
+      "ocupation": "Inmediata",
+      "servicios": "Agua · Drenaje · Luz",
+
+      "recamaras": 3,
+      "banos": 3.5,
+      "carros": 2,
+
+      "description": "",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d925.1684227023709!2d-102.32318833053098!3d21.947092542660908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef69b6c7bc87%3A0xfa4f5561b51037ba!2sC.%20Jos%C3%A9%20L%C3%B3pez%20Portillo%2C%2020983%20El%20Llano%2C%20Ags.!5e0!3m2!1ses!2smx!4v1773336009919!5m2!1ses!2smx",
+      "video": ""
+    }
+    ,{
+      "id": 18,
+          "titleName": "CASA EN VENTA EN COL EL LLANO, AGUASCALIENTES",
+      "subtitle": "Col el llano, cerca de 3° anillo norte",
+      "images": [
+          "CV_AlmenaFortaleza/AlmenaFortaleza.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza1.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza2.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza3.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza4.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza5.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza6.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza7.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza8.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza9.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza10.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza11.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza12.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza13.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza14.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza15.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza16.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza17.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza18.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza19.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza20.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza21.jpeg",
+          "CV_AlmenaFortaleza/AlmenaFortaleza22.jpeg"
+          ],
+
+      "tipoTransaction": "EN VENTA",
+      "price": "$4,300,000 MXN",
+      "TipoProperty": "CASA",
+      "ground": "139m²",
+      "construction": "223m²",
+      "ocupation": "Inmediata",
+      "servicios": "Agua · Drenaje · Luz",
+
+      "recamaras": 3,
+      "banos": 3.5,
+      "carros": 2,
+
+      "description": "",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.667818916635!2d-102.32658752653312!3d21.947318155600687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef4287edf653%3A0xd2fa5e6f5ae95baf!2sC.%20Jos%C3%A9%20L%C3%B3pez%20Portillo%2C%2020983%20Barranquillas%2C%20Ags.!5e0!3m2!1ses!2smx!4v1773336080018!5m2!1ses!2smx",
+      "video": ""
+    }
+    
   ]
