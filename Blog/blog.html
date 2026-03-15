@@ -55,7 +55,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
 
         <ul class="nav col-6 col-md-auto mb-2 justify-content-center mb-md-0"> 
-          <li><a href="../vender.html" class="nav-link px-5 text-white">Blog</a></li> 
+          <li><a href="../Blog/blog.html" class="nav-link px-5 text-white">Blog</a></li> 
           <li><a href="../nosotros.html" class="nav-link px-5 text-white">Nosotros</a></li> 
         </ul> 
 
@@ -75,14 +75,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="row1">
       <div class="left">
-        <h6>
-          Lunes, Marzo 9, 2026
+        <h6 id="fecha">
+
         </h6>
       </div>
       <div class="NewsTitle">
         <h1>NOTICIAS Y TENDENDIAS</h1>
       </div>
     </div>
+
 
     <div class="navNews">
 
@@ -177,6 +178,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   </div>
 
+  <!-- CALCULAR LA FECHA -->
+  <script>
+  const nombreDia = new Intl.DateTimeFormat('es-MX', { weekday: 'long' });
+  const nombreMes = new Intl.DateTimeFormat('es-MX', { month: 'long' });
+
+  function capitalizar(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
+  function actualizarFecha() {
+    const d = new Date();
+    const diaSemana = capitalizar(nombreDia.format(d)); // Lunes
+    const mes = capitalizar(nombreMes.format(d));       // Marzo
+    const dia = d.getDate();                            // 9
+    const anio = d.getFullYear();                       // 2026
+
+    document.getElementById('fecha').textContent = `${diaSemana}, ${mes} ${dia}, ${anio}`;
+  }
+
+  actualizarFecha();
+  // Si solo es fecha, no necesitas intervalos; si la página estará mucho tiempo abierta, podrías
+  // re-evaluarla a medianoche con un setTimeout calculado, pero para la mayoría de casos no hace falta.
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
