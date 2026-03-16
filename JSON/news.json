@@ -1,0 +1,37 @@
+{
+  "news":[
+    {
+      "id":1,
+      "title":"El mercado inmobiliario en Aguascalientes crece 20% en 2026",
+      "category":"TENDENCIAS",
+      "summary":"Nuevos desarrollos y demanda extranjera están impulsando los precios.",
+      "author":"Miguel Arellano",
+      "readTime":"3 min lectura",
+      "image":"../Material/imgHero1.jpeg",
+      "featured":true,
+      "trending":true
+    },
+
+    {
+      "id":2,
+      "title":"Aguascalientes tendrá un programa para vivienda social",
+      "category":"NOTICIAS",
+      "summary":"El gobierno estatal anunció un programa de apoyo.",
+      "author":"Miguel Arellano",
+      "readTime":"4 min lectura",
+      "image":"Material/casa1.jpg",
+      "featured":false
+    },
+
+    {
+      "id":3,
+      "title":"Las rentas suben 15% en el centro de la ciudad",
+      "category":"RENTAS",
+      "summary":"La demanda de departamentos sigue creciendo.",
+      "author":"Miguel Arellano",
+      "readTime":"2 min lectura",
+      "image":"Material/casa2.jpg",
+      "featured":false
+    }
+  ]
+}
