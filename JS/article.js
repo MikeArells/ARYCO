@@ -30,8 +30,8 @@ fetch("../JSON/news.json")
     }
 
     document.getElementById("title").textContent = article.title;
-    document.getElementById("summary").textContent = article.summary;
     document.getElementById("category").textContent = article.category;
     document.getElementById("image").src = "../" + article.image;
+    document.getElementById("content").textContent = article.content;
 
 });
