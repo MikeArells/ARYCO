@@ -8,9 +8,21 @@
       "author":"Miguel Arellano",
       "readTime":"3 min lectura",
       "image":"../Material/imgHero1.jpeg",
-      "content":"El mercado inmobiliario en Aguascalientes crece 20% en 2026 El sector inmobiliario en Aguascalientes registra un crecimiento cercano al 20% durante 2026, impulsado por el aumento de la demanda de vivienda, la llegada de nuevas inversiones industriales y el desarrollo de infraestructura urbana en distintos puntos de la ciudad.De acuerdo con especialistas del sector, el crecimiento del mercado se debe principalmente a tres factores clave: el aumento de empleos generados por la industria, el interés de inversionistas nacionales en desarrollar vivienda y la creciente demanda de propiedades por parte de familias jóvenes.Mayor demanda de vivienda y desarrollos habitacionales . Aguascalientes se posiciona como uno de los más dinámicos del Bajío, con oportunidades tanto para compradores de vivienda como para inversionistas que buscan participar en el desarrollo de la región.",
       "featured":true,
-      "trending":true
+      "trending":true,
+      "content":[
+      "El mercado inmobiliario en Aguascalientes crece 20% en 2026 El" ,
+      "sector inmobiliario en Aguascalientes registra un crecimiento cercano",
+      " al 20% durante 2026, impulsado por el aumento de la demanda de vivienda, la",
+       "llegada de nuevas inversiones industriales y el desarrollo de infraestructura ",
+       "urbana en distintos puntos de la ciudad.De acuerdo con especialistas del sector, el",
+       " crecimiento del mercado se debe principalmente a tres factores clave: el aumento de ",
+       "empleos generados por la industria, el interés de inversionistas nacionales en desarrollar",
+       " vivienda y la creciente demanda de propiedades por parte de familias jóvenes.Mayor demanda de",
+      " vivienda y desarrollos habitacionales . Aguascalientes se posiciona como uno de los más",
+      " dinámicos del Bajío, con oportunidades tanto para compradores de vivienda como para",
+      " inversionistas que buscan participar en el desarrollo de la región"
+      ]
     },
 
     {
@@ -20,8 +32,29 @@
       "summary":"El gobierno estatal anunció un programa de apoyo.",
       "author":"Miguel Arellano",
       "readTime":"4 min lectura",
-      "image":"Material/casa1.jpg",
-      "featured":false
+      "image":"../Material/Article/viviendaSocial.jpg",
+      "featured":false,
+      "content":[
+"El gobierno del estado de Aguascalientes anunció el lanzamiento de un nuevo programa de vivienda social que busca facilitar el acceso a una casa digna para familias de bajos y medianos ingresos durante este 2026.",
+"La iniciativa surge como respuesta al incremento en los precios de la vivienda y la creciente demanda habitacional en la entidad, particularmente en zonas urbanas donde el crecimiento poblacional ha sido más acelerado.",
+"¿En qué consiste el programa?",
+"De acuerdo con autoridades estatales, el programa contempla la construcción de desarrollos habitacionales accesibles, así como esquemas de financiamiento con condiciones preferenciales para facilitar la compra de vivienda.",
+"Entre los principales beneficios destacan:",
+"Créditos con tasas de interés reducidas",
+"Apoyos directos para el enganche",
+"Facilidades de pago para trabajadores formales e independientes",
+"Desarrollo de viviendas en zonas con servicios básicos garantizados",
+"Además, se prevé la colaboración con desarrolladores privados para aumentar la oferta de viviendas, asegurando estándares de calidad y ubicación estratégica.",
+"Enfoque en zonas con alta demanda",
+"El programa estará enfocado en zonas con alta necesidad de vivienda, principalmente en áreas con cercanía a corredores industriales y principales vialidades, lo que permitirá a los beneficiarios reducir tiempos de traslado y mejorar su calidad de vida.",
+"También se busca evitar la expansión desordenada de la ciudad, promoviendo proyectos con planeación urbana sostenible, acceso a transporte público y cercanía a servicios como escuelas, hospitales y centros comerciales.",
+"Impacto social y económico",
+"Especialistas consideran que esta iniciativa no solo beneficiará a miles de familias, sino que también impulsará la economía local mediante la generación de empleos en el sector de la construcción y servicios relacionados.",
+"Asimismo, el acceso a vivienda formal contribuirá a reducir el rezago habitacional y mejorar las condiciones de vida en diversas comunidades del estado.",
+"Lo que sigue",
+"Se espera que en los próximos meses se den a conocer los detalles sobre los requisitos para acceder al programa, así como las primeras ubicaciones donde se desarrollarán los proyectos.",
+"Con esta estrategia, Aguascalientes busca posicionarse como un referente en políticas de vivienda accesible en la región, apostando por un crecimiento urbano más equitativo e incluyente."
+      ]
     },
 
     {
