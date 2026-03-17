@@ -120,7 +120,7 @@
       "images": ["LomasDelChapulin/LomasDelChapulin.jpg", "LomasDelChapulin/LomasDelChapulin1.jpg", "LomasDelChapulin/LomasDelChapulin2.jpg"],
 
       "tipoTransaction": "EN VENTA",
-      "price": "$650,000 MXN",
+      "price": "$720,000 MXN",
       "TipoProperty": "Departamento",
       "ground": "57.85 m²",
       "construction": "57.85 m²",
@@ -255,8 +255,8 @@
       "tipoTransaction": "EN VENTA",
       "price": "$2,500,000 MXN",
       "TipoProperty": "Casa",
-      "ground": " m²",
-      "construction": " m²",
+      "ground": "150 m²",
+      "construction": "210 m²",
       "ocupation": "Inmediata",
       "servicios": "Agua · Drenaje · Luz",
 
