@@ -18,7 +18,7 @@ fetch("../JSON/news.json")
                 <a href="article.html?id=${article.id}" class="newsLink">
                     <img class="featPhoto" src="${article.image}" alt="${article.title}">
                     <span class="category">${article.category}</span>
-                    <h2>${article.title}</h2>
+                    <h4>${article.title}</h4>
                     <p>${article.summary}</p>
                 </a>
             `;
@@ -57,13 +57,12 @@ fetch("../JSON/news.json")
             trendItem.innerHTML = `
                 <div class="newsItem">
                     <span class="category">${article.category}</span>
-                    <h4>${article.title}</h4>
+                    <h5>${article.title}</h5>
                     <span class="author">${article.readTime}</span>
                 </div>
             `;
 
             trendsContainer.appendChild(trendItem);
-
         }
 
     });
@@ -94,3 +93,15 @@ fetch("../JSON/news.json")
   actualizarFecha();
   // Si solo es fecha, no necesitas intervalos; si la página estará mucho tiempo abierta, podrías
   // re-evaluarla a medianoche con un setTimeout calculado, pero para la mayoría de casos no hace falta.
+
+
+  // NAV HAMBURGER
+
+const hamburger = document.getElementById("hamburger");  //buscamos en HTML elemento hamburges
+const navWrapper = document.getElementById("nav-wrapper");
+
+hamburger.addEventListener("click", () => {  //“Cuando el usuario haga click en el botón hamburguesa…”
+    navWrapper.classList.toggle("active");     //Si nav-wrapper NO tiene la clase active → la agrega, Si SÍ la tiene → la quita
+});
+
+

@@ -11,17 +11,9 @@
       "featured":true,
       "trending":true,
       "content":[
-      "El mercado inmobiliario en Aguascalientes crece 20% en 2026 El" ,
-      "sector inmobiliario en Aguascalientes registra un crecimiento cercano",
-      " al 20% durante 2026, impulsado por el aumento de la demanda de vivienda, la",
-       "llegada de nuevas inversiones industriales y el desarrollo de infraestructura ",
-       "urbana en distintos puntos de la ciudad.De acuerdo con especialistas del sector, el",
-       " crecimiento del mercado se debe principalmente a tres factores clave: el aumento de ",
-       "empleos generados por la industria, el interés de inversionistas nacionales en desarrollar",
-       " vivienda y la creciente demanda de propiedades por parte de familias jóvenes.Mayor demanda de",
-      " vivienda y desarrollos habitacionales . Aguascalientes se posiciona como uno de los más",
-      " dinámicos del Bajío, con oportunidades tanto para compradores de vivienda como para",
-      " inversionistas que buscan participar en el desarrollo de la región"
+      "El mercado inmobiliario en Aguascalientes crece 20% en 2026 El sector inmobiliario en Aguascalientes registra un crecimiento cercano al 20% durante 2026, impulsado por el aumento de la demanda de vivienda, la llegada de nuevas inversiones industriales y el desarrollo de infraestructura urbana en distintos puntos de la ciudad.",
+      "De acuerdo con especialistas del sector, el crecimiento del mercado se debe principalmente a tres factores clave: el aumento de empleos generados por la industria, el interés de inversionistas nacionales en desarrollar vivienda y la creciente demanda de propiedades por parte de familias jóvenes.",
+      "Mayor demanda de vivienda y desarrollos habitacionales . Aguascalientes se posiciona como uno de los más dinámicos del Bajío, con oportunidades tanto para compradores de vivienda como para inversionistas que buscan participar en el desarrollo de la región"
       ]
     },
 
@@ -34,8 +26,9 @@
       "readTime":"4 min lectura",
       "image":"../Material/Article/viviendaSocial.jpg",
       "featured":false,
+      "trending":false,
       "content":[
-"El gobierno del estado de Aguascalientes anunció el lanzamiento de un nuevo programa de vivienda social que busca facilitar el acceso a una casa digna para familias de bajos y medianos ingresos durante este 2026.",
+"El gobierno del estado de Aguascalientes anunció el lanzamiento de un nuevo programa de vivienda social que busca facilitar el acceso a una casa digna para familias de bajos y medianos ingresos durante este 2026.?",
 "La iniciativa surge como respuesta al incremento en los precios de la vivienda y la creciente demanda habitacional en la entidad, particularmente en zonas urbanas donde el crecimiento poblacional ha sido más acelerado.",
 "¿En qué consiste el programa?",
 "De acuerdo con autoridades estatales, el programa contempla la construcción de desarrollos habitacionales accesibles, así como esquemas de financiamiento con condiciones preferenciales para facilitar la compra de vivienda.",
@@ -51,21 +44,79 @@
 "Impacto social y económico",
 "Especialistas consideran que esta iniciativa no solo beneficiará a miles de familias, sino que también impulsará la economía local mediante la generación de empleos en el sector de la construcción y servicios relacionados.",
 "Asimismo, el acceso a vivienda formal contribuirá a reducir el rezago habitacional y mejorar las condiciones de vida en diversas comunidades del estado.",
-"Lo que sigue",
+"Lo que sigue:",
 "Se espera que en los próximos meses se den a conocer los detalles sobre los requisitos para acceder al programa, así como las primeras ubicaciones donde se desarrollarán los proyectos.",
 "Con esta estrategia, Aguascalientes busca posicionarse como un referente en políticas de vivienda accesible en la región, apostando por un crecimiento urbano más equitativo e incluyente."
       ]
     },
-
     {
       "id":3,
-      "title":"Las rentas suben 15% en el centro de la ciudad",
-      "category":"RENTAS",
-      "summary":"La demanda de departamentos sigue creciendo.",
+      "title":"¿Por que los bienes raices son una de las mejores inversiones financieras?",
+      "category":"TENDENCIAS",
+      "summary":"Los bienes raices tienen varias razones para ser una de las mejores inversiones, en este articulo que platicaremos las razones..",
       "author":"Miguel Arellano",
       "readTime":"2 min lectura",
-      "image":"Material/casa2.jpg",
-      "featured":false
+      "image":"../Material/Article/Millonario.jpg",
+      "featured":false,
+      "trending": true,
+      "content":[
+"En el mundo de las finanzas personales existe una idea que rompe con lo tradicional: las grandes fortunas no se construyen únicamente ahorrando, sino invirtiendo de manera estratégica. En este contexto, los bienes raíces se han consolidado como uno de los pilares más importantes en la generación y preservación de riqueza.",
+"La inversión inmobiliaria ha sido durante años un recurso clave para familias con alto poder adquisitivo, convirtiéndose en una herramienta no solo de crecimiento financiero, sino también de protección patrimonial y planificación generacional.",
+"Pero, ¿qué hace a los bienes raíces una de las mejores inversiones?",
+"Uno de los principales factores es su capacidad de proteger el capital frente a la inflación. A diferencia del dinero en efectivo, que pierde valor con el tiempo, las propiedades tienden a incrementar su precio, manteniendo e incluso aumentando el poder adquisitivo de la inversión.",
+"Otro aspecto relevante es el apalancamiento financiero. Este mecanismo permite a los inversionistas adquirir propiedades mediante créditos, utilizando ingresos como las rentas para cubrir parcial o totalmente las deudas, mientras el valor del inmueble continúa creciendo con el tiempo.",
+"En cuanto a la volatilidad, el sector inmobiliario presenta un comportamiento más estable en comparación con otros instrumentos como las criptomonedas o el mercado bursátil. Aunque su crecimiento suele ser más lento, destaca por su consistencia y menor riesgo relativo.",
+"Especialistas coinciden en que invertir en bienes raíces no es exclusivo de personas millonarias, sino una alternativa viable para quienes buscan construir un patrimonio sólido y generar ingresos a largo plazo.",
+"Para quienes estén interesados en iniciar en este tipo de inversión, Arellano&cía ofrece asesoría a través de sus redes sociales y su sitio web (Arycobr.com), con el objetivo de guiar a nuevos inversionistas en la toma de decisiones informadas.",
+"Los bienes raíces continúan posicionándose como una de las opciones más confiables en el mundo financiero, abriendo la puerta a nuevas oportunidades para quienes buscan cambiar su realidad económica y asegurar su futuro."
+      ]
+    }
+    ,
+    {
+      "id":4,
+      "title":"Comprar casa en Aguascalientes cada vez es más difícil… y esta es la razón",
+      "category":"NOTICIAS",
+      "summary":"",
+      "author":"Miguel Arellano",
+      "readTime":"2 min lectura",
+      "image":"../Material/Article/casaenAgs.jpg",
+      "featured":false,
+      "trending": false,
+      "content":[
+" El acceso a la vivienda en Aguascalientes se ha convertido en uno de los principales retos económicos para la población en 2026. Especialistas advierten que adquirir una casa es cada vez más complicado debido al incremento acelerado en los precios, muy por encima del crecimiento salarial.",
+"De acuerdo con análisis recientes, el costo de la vivienda ha aumentado hasta un 68% en las últimas dos décadas, mientras que los salarios apenas han crecido alrededor de un 14%, generando una brecha que limita el acceso a la vivienda para miles de familias.",
+"Este fenómeno no es nuevo, pero se ha intensificado en los últimos años, especialmente después de la pandemia, evidenciando un problema estructural en el mercado inmobiliario.",
+"Uno de los principales factores detrás de esta situación es el desequilibrio entre oferta y demanda. Actualmente, existe una alta demanda de vivienda, impulsada por el crecimiento urbano y la llegada de inversión, mientras que la oferta de casas accesibles sigue siendo limitada.",
+"Además, el mercado ha comenzado a priorizar desarrollos de mayor valor, dejando en segundo plano la vivienda económica, lo que excluye a una parte importante de la población, particularmente a quienes buscan adquirir su primera casa.",
+"Otro elemento clave es el encarecimiento de la construcción. El aumento en salarios, materiales y costos operativos ha impactado directamente en el precio final de las viviendas, trasladando ese incremento al comprador.",
+"A esto se suma el crecimiento constante en el mercado de rentas, donde los precios también han ido en aumento debido a la alta demanda de espacios bien ubicados, lo que refuerza la tendencia de que cada vez más personas opten por rentar en lugar de comprar.",
+"Expertos advierten que, de no implementarse estrategias efectivas, entre un 30% y 40% de la población podría quedar fuera del acceso a vivienda formal, lo que pone en duda el alcance del llamado “sueño de la casa propia”.",
+"A pesar de este panorama, el dinamismo del sector inmobiliario continúa, impulsando el desarrollo urbano y el crecimiento económico del estado, aunque con el reto de lograr un equilibrio entre inversión y accesibilidad.",
+"En este contexto, el mercado inmobiliario en Aguascalientes se enfrenta a una disyuntiva clave: seguir creciendo o garantizar que ese crecimiento sea accesible para la mayoría de la población."
+      ]
+    },
+    {
+      "id":5,
+      "title":"Aguascalientes se está llenando de torres… ¿y eso es bueno o malo?",
+      "category":"NOTICIAS",
+      "summary":"",
+      "author":"Miguel Arellano",
+      "readTime":"2 min lectura",
+      "image":"../Material/Article/Edificio_Ags.jpg",
+      "featured":false,
+      "trending": true,
+      "content":[
+"Aguascalientes atraviesa una transformación significativa en su modelo de desarrollo urbano. La construcción de torres habitacionales, corporativas y de uso mixto ha incrementado de forma notable en los últimos años, marcando una transición de crecimiento horizontal hacia un esquema de verticalización.",
+"De acuerdo con reportes del medio Líder Empresarial, actualmente se proyectan cerca de 100 torres en distintas etapas de planeación y construcción en la entidad, reflejo de una tendencia que responde tanto a la demanda inmobiliaria como a nuevas estrategias de aprovechamiento del suelo.",
+"Este fenómeno está estrechamente ligado al nuevo enfoque del desarrollo urbano impulsado por autoridades locales, el cual busca densificar zonas céntricas y optimizar la infraestructura existente. Según información publicada por El Sol del Centro, la verticalización pretende reducir la expansión descontrolada de la ciudad hacia la periferia, además de disminuir tiempos de traslado y mejorar la conectividad urbana.",
+"Especialistas señalan que uno de los principales motores de este cambio es el crecimiento poblacional y la alta demanda de vivienda en zonas bien ubicadas. A esto se suma el encarecimiento del suelo urbano, que ha llevado a desarrolladores a construir en altura para maximizar el uso del espacio y aumentar la rentabilidad de los proyectos.",
+"Sin embargo, este crecimiento no está exento de desafíos.",
+"Entre los beneficios más destacados se encuentra la posibilidad de generar ciudades más compactas y eficientes, con acceso cercano a servicios, centros de trabajo y espacios comerciales. Asimismo, el desarrollo vertical impulsa la inversión y modernización del entorno urbano, posicionando a Aguascalientes como una ciudad en evolución.",
+"No obstante, también existen preocupaciones importantes. Expertos advierten sobre el riesgo de gentrificación, donde el incremento en el valor de las propiedades podría desplazar a habitantes tradicionales. Además, el aumento en la densidad poblacional podría ejercer presión sobre servicios básicos como agua, drenaje y vialidades, especialmente si no se acompaña de una adecuada planeación.",
+"El impacto ambiental es otro de los puntos en debate. Proyectos inmobiliarios cercanos a zonas naturales han generado controversia en la opinión pública, como en el caso de La Pona, considerada uno de los principales pulmones verdes de la ciudad.",
+"Analistas coinciden en que el crecimiento vertical no es, por sí mismo, positivo o negativo. Su impacto dependerá de la capacidad de las autoridades y desarrolladores para implementar políticas de desarrollo sostenible, garantizar infraestructura adecuada y mantener el equilibrio entre crecimiento económico y calidad de vida.",
+"En este contexto, Aguascalientes enfrenta un momento clave en su evolución urbana: consolidarse como una ciudad moderna y eficiente, o enfrentar los retos derivados de un crecimiento acelerado sin planeación suficiente."
+      ]
     }
   ]
 }

@@ -152,11 +152,11 @@ gridItem.innerHTML += property.images
 
   // NAV HAMBURGER
 
-    const hamburger = document.getElementById("hamburger");  //buscamos en HTML elemento hamburges
-    const navWrapper = document.getElementById("nav-wrapper");
+const hamburger = document.getElementById("hamburger");  //buscamos en HTML elemento hamburges
+const navWrapper = document.getElementById("nav-wrapper");
 
-    hamburger.addEventListener("click", () => {  //“Cuando el usuario haga click en el botón hamburguesa…”
-      navWrapper.classList.toggle("active");     //Si nav-wrapper NO tiene la clase active → la agrega, Si SÍ la tiene → la quita
-    });
+hamburger.addEventListener("click", () => {  //“Cuando el usuario haga click en el botón hamburguesa…”
+  navWrapper.classList.toggle("active");     //Si nav-wrapper NO tiene la clase active → la agrega, Si SÍ la tiene → la quita
+});
 
     
