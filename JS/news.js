@@ -22,7 +22,7 @@ fetch("../JSON/news.json")
                     <p>${article.summary}</p>
                 </a>
             `;
-
+            featuredRendered = true;
         }
 
         // -------------------------
@@ -36,7 +36,7 @@ fetch("../JSON/news.json")
         newsLink.innerHTML = `
             <div class="newsItem">
                 <span class="category">${article.category}</span>
-                <h5 class="title">${article.title}</h5>
+                <h6 class="title">${article.title}</h6>
                 <span class="author">${article.readTime}</span>
             </div>
         `;
@@ -57,7 +57,7 @@ fetch("../JSON/news.json")
             trendItem.innerHTML = `
                 <div class="newsItem">
                     <span class="category">${article.category}</span>
-                    <h5>${article.title}</h5>
+                    <h6>${article.title}</h6>
                     <span class="author">${article.readTime}</span>
                 </div>
             `;
@@ -67,8 +67,39 @@ fetch("../JSON/news.json")
 
     });
 
+        // -------------------------
+        // 4 CARDS DEBAJO DE FEATURED
+        // -------------------------
+    const featuredCards = data.news
+    .filter(a => !a.featured) // que no sea la grande
+    .slice(0, 4); // solo 4
+
+    const cardsContainer = document.createElement("div");
+    cardsContainer.classList.add("cards-container");
+
+    featuredCards.forEach(article => {
+
+        const card = document.createElement("a");
+        card.href = `article.html?id=${article.id}`;
+        card.classList.add("card", "newsLink");
+
+        card.innerHTML = `
+            <img src="${article.image}" alt="${article.title}">
+            <div class="card-content">
+                <span class="category">${article.category}</span>
+                <h5>${article.title}</h5>
+            </div>
+        `;
+
+        cardsContainer.appendChild(card);
+    });
+
+    // 👇 IMPORTANTE: se agrega debajo, no reemplaza
+    featuredContainer.appendChild(cardsContainer);
+
 })
 .catch(err => console.error("Error cargando noticias:", err));
+
 
 
 //-------------  CALCULAR LA FECHA -------------
@@ -95,7 +126,7 @@ fetch("../JSON/news.json")
   // re-evaluarla a medianoche con un setTimeout calculado, pero para la mayoría de casos no hace falta.
 
 
-  // NAV HAMBURGER
+  //----------------- NAV HAMBURGER -------------------
 
 const hamburger = document.getElementById("hamburger");  //buscamos en HTML elemento hamburges
 const navWrapper = document.getElementById("nav-wrapper");
