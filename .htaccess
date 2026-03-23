@@ -1,9 +1,0 @@
-RewriteEngine On
-
-# Quitar .html de la URL
-RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
-RewriteRule ^ /%1 [R=301,L]
-
-# Buscar automáticamente el .html si no se escribe
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^([^\.]+)$ $1.html [L]

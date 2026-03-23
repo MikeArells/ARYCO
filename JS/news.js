@@ -28,21 +28,37 @@ fetch("../JSON/news.json")
         // -------------------------
         // NOTICIAS RECIENTES
         // -------------------------
-        const newsLink = document.createElement("a");
+    // const newsLink = document.createElement("a");
 
-        newsLink.href = `article.html?id=${article.id}`;
-        newsLink.classList.add("newsLink");
+    // newsLink.href = `article.html?id=${article.id}`;
+    // newsLink.classList.add("newsLink");
 
-        newsLink.innerHTML = `
-            <div class="newsItem">
-                <span class="category">${article.category}</span>
-                <h6 class="title">${article.title}</h6>
-                <span class="author">${article.readTime}</span>
-            </div>
-        `;
+    // newsLink.innerHTML = `
+    //     <div class="newsItem">
+    //         <span class="category">${article.category}</span>
+    //         <h6 class="title">${article.title}</h6>
+    //         <span class="author">${article.readTime}</span>
+    //     </div>
+    // `;
 
-        recentContainer.appendChild(newsLink);
+    // recentContainer.appendChild(newsLink);
+        if(article.recent){
+            
+            const newsLink = document.createElement("a");
 
+            newsLink.href = `article.html?id=${article.id}`;
+            newsLink.classList.add("newsLink");
+
+            newsLink.innerHTML = `
+                <div class="newsItem">
+                    <span class="category">${article.category}</span>
+                    <h6 class="title">${article.title}</h6>
+                    <span class="author">${article.readTime}</span>
+                </div>
+            `;
+
+            recentContainer.appendChild(newsLink);
+        }
 
         // -------------------------
         // TENDENCIAS

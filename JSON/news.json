@@ -9,7 +9,8 @@
       "readTime":"3 min lectura",
       "image":"../Material/imgHero1.jpeg",
       "featured":true,
-      "trending":true,
+      "trending":false,
+      "recent":false,
       "content":[
       "El mercado inmobiliario en Aguascalientes crece 20% en 2026 El sector inmobiliario en Aguascalientes registra un crecimiento cercano al 20% durante 2026, impulsado por el aumento de la demanda de vivienda, la llegada de nuevas inversiones industriales y el desarrollo de infraestructura urbana en distintos puntos de la ciudad.",
       "De acuerdo con especialistas del sector, el crecimiento del mercado se debe principalmente a tres factores clave: el aumento de empleos generados por la industria, el interés de inversionistas nacionales en desarrollar vivienda y la creciente demanda de propiedades por parte de familias jóvenes.",
@@ -27,6 +28,7 @@
       "image":"../Material/Article/viviendaSocial.jpg",
       "featured":false,
       "trending":false,
+      "recent":true,
       "content":[
 "El gobierno del estado de Aguascalientes anunció el lanzamiento de un nuevo programa de vivienda social que busca facilitar el acceso a una casa digna para familias de bajos y medianos ingresos durante este 2026.?",
 "La iniciativa surge como respuesta al incremento en los precios de la vivienda y la creciente demanda habitacional en la entidad, particularmente en zonas urbanas donde el crecimiento poblacional ha sido más acelerado.",
@@ -56,9 +58,10 @@
       "summary":"Los bienes raices tienen varias razones para ser una de las mejores inversiones, en este articulo que platicaremos las razones..",
       "author":"Miguel Arellano",
       "readTime":"2 min lectura",
-      "image":"../Material/Article/Millonario.jpg",
+      "image":"../Material/Article/millonario.jpg",
       "featured":false,
       "trending": true,
+      "recent":false,
       "content":[
 "En el mundo de las finanzas personales existe una idea que rompe con lo tradicional: las grandes fortunas no se construyen únicamente ahorrando, sino invirtiendo de manera estratégica. En este contexto, los bienes raíces se han consolidado como uno de los pilares más importantes en la generación y preservación de riqueza.",
 "La inversión inmobiliaria ha sido durante años un recurso clave para familias con alto poder adquisitivo, convirtiéndose en una herramienta no solo de crecimiento financiero, sino también de protección patrimonial y planificación generacional.",
@@ -81,6 +84,7 @@
       "image":"../Material/Article/casaenAgs.jpg",
       "featured":false,
       "trending": false,
+      "recent":true,
       "content":[
 " El acceso a la vivienda en Aguascalientes se ha convertido en uno de los principales retos económicos para la población en 2026. Especialistas advierten que adquirir una casa es cada vez más complicado debido al incremento acelerado en los precios, muy por encima del crecimiento salarial.",
 "De acuerdo con análisis recientes, el costo de la vivienda ha aumentado hasta un 68% en las últimas dos décadas, mientras que los salarios apenas han crecido alrededor de un 14%, generando una brecha que limita el acceso a la vivienda para miles de familias.",
@@ -104,6 +108,7 @@
       "image":"../Material/Article/Edificio_Ags.jpg",
       "featured":false,
       "trending": true,
+      "recent":false,
       "content":[
 "Aguascalientes atraviesa una transformación significativa en su modelo de desarrollo urbano. La construcción de torres habitacionales, corporativas y de uso mixto ha incrementado de forma notable en los últimos años, marcando una transición de crecimiento horizontal hacia un esquema de verticalización.",
 "De acuerdo con reportes del medio Líder Empresarial, actualmente se proyectan cerca de 100 torres en distintas etapas de planeación y construcción en la entidad, reflejo de una tendencia que responde tanto a la demanda inmobiliaria como a nuevas estrategias de aprovechamiento del suelo.",
@@ -119,25 +124,85 @@
     },
     {
       "id":6,
-      "title":"Comprar casa en Aguascalientes cada vez es más difícil… y esta es la razón",
-      "category":"NOTICIAS",
+      "title":"El auge del nearshoring está disparando el mercado inmobiliario en México",
+      "category":"Nacional",
       "summary":"",
       "author":"Miguel Arellano",
-      "readTime":"2 min lectura",
+      "readTime":" min lectura",
       "image":"../Material/Article/casaenAgs.jpg",
       "featured":false,
       "trending": false,
+      "recent":true,
       "content":[
-" El acceso a la vivienda en Aguascalientes se ha convertido en uno de los principales retos económicos para la población en 2026. Especialistas advierten que adquirir una casa es cada vez más complicado debido al incremento acelerado en los precios, muy por encima del crecimiento salarial.",
-"De acuerdo con análisis recientes, el costo de la vivienda ha aumentado hasta un 68% en las últimas dos décadas, mientras que los salarios apenas han crecido alrededor de un 14%, generando una brecha que limita el acceso a la vivienda para miles de familias.",
-"Este fenómeno no es nuevo, pero se ha intensificado en los últimos años, especialmente después de la pandemia, evidenciando un problema estructural en el mercado inmobiliario.",
-"Uno de los principales factores detrás de esta situación es el desequilibrio entre oferta y demanda. Actualmente, existe una alta demanda de vivienda, impulsada por el crecimiento urbano y la llegada de inversión, mientras que la oferta de casas accesibles sigue siendo limitada.",
-"Además, el mercado ha comenzado a priorizar desarrollos de mayor valor, dejando en segundo plano la vivienda económica, lo que excluye a una parte importante de la población, particularmente a quienes buscan adquirir su primera casa.",
-"Otro elemento clave es el encarecimiento de la construcción. El aumento en salarios, materiales y costos operativos ha impactado directamente en el precio final de las viviendas, trasladando ese incremento al comprador.",
-"A esto se suma el crecimiento constante en el mercado de rentas, donde los precios también han ido en aumento debido a la alta demanda de espacios bien ubicados, lo que refuerza la tendencia de que cada vez más personas opten por rentar en lugar de comprar.",
-"Expertos advierten que, de no implementarse estrategias efectivas, entre un 30% y 40% de la población podría quedar fuera del acceso a vivienda formal, lo que pone en duda el alcance del llamado “sueño de la casa propia”.",
-"A pesar de este panorama, el dinamismo del sector inmobiliario continúa, impulsando el desarrollo urbano y el crecimiento económico del estado, aunque con el reto de lograr un equilibrio entre inversión y accesibilidad.",
-"En este contexto, el mercado inmobiliario en Aguascalientes se enfrenta a una disyuntiva clave: seguir creciendo o garantizar que ese crecimiento sea accesible para la mayoría de la población."
+"En los últimos años, México ha emergido como uno de los principales destinos para la relocalización de empresas internacionales, un fenómeno conocido como nearshoring. Lo que comenzó como una estrategia corporativa para reducir costos y riesgos logísticos se ha convertido en un motor silencioso que está transformando el mercado inmobiliario del país.",
+"A medida que compañías, principalmente de Estados Unidos, trasladan operaciones hacia territorio mexicano, la demanda de espacios industriales ha crecido de manera sostenida. Sin embargo, el impacto no se limita a naves industriales o parques logísticos. Se extiende, de forma cada vez más visible, al mercado de la vivienda.",
+"En ciudades con vocación industrial como Monterrey, Querétaro y Aguascalientes, el efecto es particularmente notable. La llegada de nuevas inversiones ha generado una presión creciente sobre la infraestructura urbana y, al mismo tiempo, ha impulsado el desarrollo de proyectos habitacionales dirigidos a una población laboral en expansión.",
+"“El mercado inmobiliario está respondiendo rápidamente a esta nueva demanda”, señalan analistas del sector. “Pero lo está haciendo en un contexto donde la planeación urbana no siempre avanza al mismo ritmo”.",
+"La consecuencia ha sido un incremento sostenido en los precios de la vivienda y, especialmente, en el mercado de rentas. Para muchos trabajadores, la cercanía a los centros industriales se ha vuelto una necesidad, lo que eleva la competencia por espacios habitacionales bien ubicados.",
+"Al mismo tiempo, inversionistas han comenzado a ver estas zonas como oportunidades estratégicas. La posibilidad de adquirir propiedades para destinarlas al arrendamiento, en un entorno de alta demanda, ha incrementado el interés en el sector residencial como vehículo de generación de ingresos.",
+"No obstante, el crecimiento acelerado también plantea interrogantes. El aumento en la densidad poblacional puede traducirse en presión sobre servicios básicos, desde el suministro de agua hasta la movilidad urbana. Además, el encarecimiento de la vivienda amenaza con desplazar a comunidades que históricamente han habitado estas zonas.",
+"Expertos coinciden en que el nearshoring no es un fenómeno pasajero, sino un cambio estructural en la economía global que seguirá moldeando el desarrollo urbano de México en los próximos años.",
+"La pregunta, señalan, no es si el crecimiento continuará, sino si las ciudades estarán preparadas para sostenerlo."
+      ]
+    },
+    {
+      "id":7,
+      "title":"",
+      "category":"",
+      "summary":"",
+      "author":"",
+      "readTime":" min lectura",
+      "image":"../Material/Article/",
+      "featured":false,
+      "trending": false,
+      "recent":false,
+      "content":[
+
+      ]
+    },
+    {
+      "id":8,
+      "title":"",
+      "category":"",
+      "summary":"",
+      "author":"",
+      "readTime":" min lectura",
+      "image":"../Material/Article/",
+      "featured":false,
+      "trending": false,
+      "recent":false,
+      "content":[
+
+      ]
+    },
+    {
+      "id":9,
+      "title":"",
+      "category":"",
+      "summary":"",
+      "author":"",
+      "readTime":" min lectura",
+      "image":"../Material/Article/casaenAgs.jpg",
+      "featured":false,
+      "trending": false,
+      "recent":false,
+      "content":[
+
+      ]
+    },
+    {
+      "id":10,
+      "title":"",
+      "category":"",
+      "summary":"",
+      "author":"",
+      "readTime":" min lectura",
+      "image":"../Material/Article/casaenAgs.jpg",
+      "featured":false,
+      "trending": false,
+      "recent":false,
+      "content":[
+
       ]
     }
   ]
