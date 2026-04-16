@@ -264,6 +264,10 @@
     align-content: center;
   }
 
+
+  .descripcion {
+    white-space: pre-line;
+  }
 /*----------- CAJA DE CONTACTO -----------*/
 
 .contact-form {

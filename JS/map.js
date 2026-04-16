@@ -10,10 +10,6 @@ const map = new mapboxgl.Map({
   zoom: 11
 });
 
-map.on('error', (e) => {
-  console.error('Mapbox error:', e.error);
-});
-
 map.on('load', () => {
   console.log('Mapa cargó correctamente');
 });
@@ -23,31 +19,122 @@ let properties = [];
 let markers = [];
 let baseList = [];
 
-  // -------- FETCH, PIN Instance en cluster para agregar desde JSON --------
-  fetch("JSON/properties.json")
-    .then(response => response.json())
-    .then(data => {
+  function normalizeProperty(property) {
+    //   // Normalizar rutas de imágenes
+    // let images = property.images || ['imgHero1.jpeg'];
+    // images = images.map(img => {
+    //   // Si la imagen ya incluye una ruta específica, úsala tal cual
+    //   if (img.includes('/')) {
+    //     return img;
+    //   }
+    //   // Si no, agrega la carpeta Material
+    //   return 'Material/' + img;
+    // });
 
+    images = property.images || [];
+
+    images = images.map(img => {
+      if (img.startsWith('http')) {
+        return img; // imagen de Supabase ✅
+      }
+      return 'Material/' + img; // fallback local
+    });
+
+    return {
+      id: property.id || property.ID || 0,
+      titleName: property.Titulo || property.titleName || '',
+      subtitle: property.Subtitulo || property.subtitle || '',
+      tipoTransaction: property.transaccion || property.tipoTransaction || '',
+      price: property.precio !== undefined ? formatPrice(property.precio) : property.price || '',
+      TipoProperty: property.tipoPropiedad || property.TipoProperty || '',
+      ground: property.terreno || property.ground || '',
+      construction: property.construccion || property.construction || '',
+      ocupation: property.ocupacion || property.ocupation || '',
+      payment: property.pago || property.payment || '',
+      servicios: property.servicios || property.servicios || '',
+      recamaras: property.recamaras || property.recamaras || 0,
+      banos: property.banos || property.banos || 0,
+      carros: property.carros || property.carros || 0,
+      images: images,
+      map: property.map || '',
+      video: property.video || '',
+      descripcion: property.descripcion ||''
+    };
+  }
+
+  function formatPrice(value) {
+    if (value === null || value === undefined) {
+      return '';
+    }
+    if (typeof value === 'number') {
+      return '$' + value.toLocaleString('es-MX');
+    }
+    return value;
+  }
+
+  // -------- FETCH, PIN Instance en cluster para agregar desde backend o JSON --------
+  // apiPropertiesUrl ya está declarado en main.js
+
+  // async function loadProperties() {
+  //   try {
+  //     const response = await fetch(apiPropertiesUrl);
+  //     if (!response.ok) {
+  //       throw new Error('Error backend');
+  //     }
+  //     const data = await response.json();
+  //     return data.map(normalizeProperty);
+  //   } catch (error) {
+  //     console.warn('Falling back to JSON due to backend error:', error);
+  //     const response = await fetch('JSON/properties.json');
+  //     const data = await response.json();
+  //     return data.map(normalizeProperty);
+  //   }
+  // }
+
+  async function loadProperties() {
+  const { data, error } = await supabase
+    .from('propiedades')
+    .select('*');
+
+  if (error) {
+    console.error('Error cargando propiedades:', error);
+
+    // fallback opcional a JSON
+    const response = await fetch('JSON/properties.json');
+    const dataJson = await response.json();
+    return dataJson.map(normalizeProperty);
+  }
+
+  return data.map(normalizeProperty);
+}
+
+ // otra cosa
+  loadProperties()
+    .then(data => {
       properties = data;
 
-        // Detectar en qué página estamos
-    const page = window.location.pathname.toLowerCase();
+      const currentUrl = window.location.href.toLowerCase();
+      baseList = properties;
 
-    baseList = properties;
+      if (currentUrl.includes('comprar')) {
+        baseList = properties.filter(p => p.tipoTransaction.toUpperCase().includes('EN VENTA'));
+      }
 
-    if(page.includes("comprar")){
-      baseList = properties.filter(p => p.tipoTransaction.includes("EN VENTA"));
-    }
+      if (currentUrl.includes('rentar')) {
+        baseList = properties.filter(p => p.tipoTransaction.toUpperCase().includes('EN RENTA'));
+      }
 
-    if(page.includes("rentar")){
-      baseList = properties.filter(p => p.tipoTransaction.includes("EN RENTA"));
-    }
-
-      //Render
-      renderMarkers(baseList); // mostrar los markers
-      renderCards(baseList);   // cards
+      console.log('Propiedades cargadas:', baseList.length, 'en', currentUrl.includes('comprar') ? 'comprar' : currentUrl.includes('rentar') ? 'rentar' : 'otros');
+      renderMarkers(baseList);
+      renderCards(baseList);
     })
-    .catch(err => console.error("Error cargando propiedades:", err));
+    .catch(err => {
+      console.error('Error cargando propiedades:', err);
+      const container = document.getElementById('properties-list');
+      if (container) {
+        container.innerHTML = '<div class="col-12"><p class="text-muted">No se pudieron cargar las propiedades. Verifica que el backend esté funcionando.</p></div>';
+      }
+    });
 
   //---------- FILTERS ----------
   function applyFilters(){
@@ -96,7 +183,7 @@ let baseList = [];
       const popupContent = `
         <div style="width:180px;">
           <a href="property1.html?id=${prop.id}" style="text-decoration:none;color:black;">
-            <img src="Material/${prop.images[0]}"
+            <img src="${prop.images[0]}"
                  style="width:100%; height:100px; object-fit:cover; border-radius:6px;">
             <h6>${prop.subtitle}</h6>
             <p>${prop.price}</p>
@@ -124,13 +211,18 @@ let baseList = [];
   const container = document.getElementById("properties-list");
   container.innerHTML = "";
 
+  if (!list || list.length === 0) {
+    container.innerHTML = '<div class="col-12"><p class="text-muted">No se encontraron propiedades para esta categoría.</p></div>';
+    return;
+  }
+
   list.forEach(prop => {
 
     const card = `
       <div class="col">
         <a href="property1.html?id=${prop.id}" class="text-decoration-none">
           <div class="card shadow-sm">
-            <img src="Material/${prop.images[0]}" alt="${prop.titleName}" class="propiedad1">
+            <img src="${prop.images[0]}" alt="${prop.titleName}" class="propiedad1">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center px-3 pt-2">
                 <p class="fw-bold fs-6 mb-0">${prop.price}</p>
@@ -173,10 +265,10 @@ let baseList = [];
     marker: true,
     placeholder: "Buscar dirección..."
   });
+  map.addControl(geocoder);
 
   //---------- Insertar buscador ----------
   // document.getElementById("geocoder").appendChild(geocoder.onAdd(map));
-  map.addControl(geocoder, "top-center");
 
 
   //---------- Controles opcionales ----------

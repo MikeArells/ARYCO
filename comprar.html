@@ -23,7 +23,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         rel="stylesheet"
     />
 
-    <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.1/mapbox-gl-geocoder.css" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" rel="stylesheet">
+
+    <!-- <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.1/mapbox-gl-geocoder.css" rel="stylesheet"> -->
 
 </head>
 
@@ -67,7 +69,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <div class="col-md-3 text-end"> 
             <button type="button" class="btn btn-outline-primary me-4" disabled>Cotizar seguro</button> 
-            <button type="button" class="btn btn-primary" disabled>Registrarse</button> 
+            <a href="register.html" class="btn btn-primary">Registrarse</a> 
           </div> 
         </div>
         
@@ -220,13 +222,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Mapbox Geocoder -->
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.1/mapbox-gl-geocoder.min.js"></script>
 
-    <!-- Mapbox-->
+    <!-- Mapbox Token -->
     <script>
     window.MAPBOX_TOKEN = 'pk.eyJ1IjoibWlrZWFyZWxscyIsImEiOiJjbW1oZXNjOWkwdjFjMm9wczQ3emUwbWEzIn0.gg0exrUTHeQPKfvfAD2BvQ';
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>   <!-- hecho por GPT -->
+    <script src="JS/supabaseClient.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <script src="JS/map.js"></script>
     <script src="JS/main.js"></script>
-    <script src="JS/map.js" defer></script>
 
   </body>
 </html>
