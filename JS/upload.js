@@ -158,14 +158,22 @@ for (let file of files) {
   imageUrls.push(data.publicUrl);
 }
 
+function toFloat(value) {
+  if (value === '') return null;
+  const num = parseFloat(value);
+  return isNaN(num) ? null : num;
+}
+
   const payload = {
     titulo: document.getElementById('titulo').value.trim(),
     subtitulo: document.getElementById('subtitulo').value.trim(),
     transaccion: document.getElementById('transaccion').value,
     precio: Number(document.getElementById('precio').value),
     tipoPropiedad: document.getElementById('tipoPropiedad').value.trim(),
-    terreno: parseFloat(document.getElementById('terreno').value) || null,
-    construccion: parseFloat(document.getElementById('construccion').value) || null,
+    // terreno: parseFloat(document.getElementById('terreno').value) || null,
+    // construccion: parseFloat(document.getElementById('construccion').value) || null,
+    terreno: toFloat(document.getElementById('terreno').value),
+    construccion: toFloat(document.getElementById('construccion').value),
     ocupacion: document.getElementById('ocupacion').value.trim() || null,
     pago: document.getElementById('pago').value.trim() || null,
     descripcion: document.getElementById('descripcion').value.trim() || null,
@@ -199,3 +207,14 @@ for (let file of files) {
     console.error(error);
   }
 });
+
+
+async function loadData() {
+  const { data, error } = await supabase
+    .from('propiedades')
+    .select('*');
+
+  console.log(data);
+}
+
+loadData();

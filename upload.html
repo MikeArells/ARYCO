@@ -7,24 +7,29 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="Static/style.css" />
 </head>
+
 <body>
   <section class="container py-5">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-8 bg-white rounded-4 shadow p-4">
         <h1 class="mb-4">Subir una propiedad</h1>
-        <p>Completa los datos de la propiedad. Las fotos se subirán por el frontend más adelante.</p>
+        <p>Completa los datos de la propiedad.</p>
         <div id="successMessage" class="alert alert-success" style="display:none;"></div>
         <div id="errorMessage" class="alert alert-danger" style="display:none;"></div>
         <form id="propertyForm">
+
           <div class="row g-3">
+
             <div class="col-md-6">
               <label for="titulo" class="form-label">Título</label>
               <input type="text" class="form-control" id="titulo" required>
             </div>
+
             <div class="col-md-6">
               <label for="subtitulo" class="form-label">Subtítulo</label>
               <input type="text" class="form-control" id="subtitulo" required>
             </div>
+
             <div class="col-md-6">
               <label for="transaccion" class="form-label">Transacción</label>
               <select id="transaccion" class="form-select" required>
@@ -33,75 +38,100 @@
                 <option value="EN RENTA">En renta</option>
               </select>
             </div>
+
             <div class="col-md-6">
               <label for="precio" class="form-label">Precio</label>
               <input type="number" class="form-control" id="precio" step="0.01" required>
             </div>
+
             <div class="col-md-6">
               <label for="tipoPropiedad" class="form-label">Tipo de propiedad</label>
-              <input type="text" class="form-control" id="tipoPropiedad" required>
+              <select id="tipoPropiedad" class="form-select" required>
+                <option value="">Selecciona</option>
+                <option value="CASA">Casa</option>
+                <option value="DEPARTAMENTO">Departamento</option>
+                <option value="BODEGA">Bodega</option>
+                <option value="TERRENO">Terreno</option>
+                <option value="NAVE INDUSTRIAL">Nave Industrial</option>
+                <option value="RANCHO">Rancho</option>
+                <option value="EDIFICIO">Edificio</option>
+              </select>
             </div>
+
             <div class="col-md-6">
               <label for="terreno" class="form-label">Terreno (m²)</label>
-              <input type="number" class="form-control" id="terreno">
+              <input type="number" step="0.01" class="form-control" id="terreno">
             </div>
+
             <div class="col-md-6">
               <label for="construccion" class="form-label">Construcción (m²)</label>
-              <input type="number" class="form-control" id="construccion">
+              <input type="number" step="0.01" class="form-control" id="construccion">
             </div>
+
             <div class="col-md-6">
               <label for="ocupacion" class="form-label">Ocupación</label>
               <input type="text" class="form-control" id="ocupacion">
             </div>
+
             <div class="col-md-6">
-              <label for="pago" class="form-label">Forma de p ago</label>
+              <label for="pago" class="form-label">Forma de pago</label>
               <input type="text" class="form-control" id="pago">
             </div>
+            
             <div class="col-12">
               <label for="descripcion" class="form-label">Descripción</label>
               <textarea class="form-control" id="descripcion" rows="3"></textarea>
             </div>
+
             <div class="col-md-6">
               <label for="maps_url" class="form-label">URL de Google Maps</label>
               <input type="url" class="form-control" id="maps_url" placeholder="https://maps.google.com/...">
             </div>
+
             <div class="col-md-6">
               <label for="video" class="form-label">URL de Video (YouTube, etc.)</label>
               <input type="url" class="form-control" id="video" placeholder="https://youtube.com/...">
             </div>
+
             <div class="col-12">
               <label for="servicios" class="form-label">Servicios (coma separados o JSON simple)</label>
               <textarea class="form-control" id="servicios" rows="3"></textarea>
             </div>
+
             <div class="col-md-4">
               <label for="recamaras" class="form-label">Recámaras</label>
               <input type="number" class="form-control" id="recamaras">
             </div>
+
             <div class="col-md-4">
               <label for="banos" class="form-label">Baños</label>
               <input type="number" class="form-control" id="banos">
             </div>
+
             <div class="col-md-4">
               <label for="carros" class="form-label">Cajones</label>
               <input type="number" class="form-control" id="carros">
             </div>
-          </div>
-          <div class="col-12">
-            <label for="imagenes" class="form-label">Imágenes de la propiedad</label>
-            <input type="file" class="form-control" id="imagenes" multiple accept="image/*">
-            <small class="text-muted">Puedes seleccionar varias imágenes</small>
+
+            <div class="col-12">
+              <label for="imagenes" class="form-label">Imágenes de la propiedad</label>
+              <input type="file" class="form-control" id="imagenes" multiple accept="image/*">
+              <small class="text-muted">Puedes seleccionar varias imágenes</small>
+            </div>
+
           </div>
           
           <div class="mt-4">
             <button type="submit" class="btn btn-primary">Enviar propiedad</button>
             <button type="button" class="btn btn-secondary" id="logoutButton">Cerrar sesión</button>
           </div>
+
         </form>
       </div>
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script> <!-- hecho por GPT -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script> 
   <script src="JS/supabaseClient.js"></script>
   <script src="JS/upload.js"></script>
 </body>
