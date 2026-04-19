@@ -181,7 +181,7 @@ function toFloat(value) {
     video: document.getElementById('video').value.trim() || null,
     servicios: parseServicios(document.getElementById('servicios').value),
     recamaras: Number(document.getElementById('recamaras').value) || null,
-    banos: Number(document.getElementById('banos').value) || null,
+    banos: toFloat(document.getElementById('banos').value) || null,
     carros: Number(document.getElementById('carros').value) || null,
     images: imageUrls
   };
