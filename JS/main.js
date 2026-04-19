@@ -37,21 +37,6 @@ function formatPrice(value) {
   return value;
 }
 
-// async function fetchProperties() {
-//   try {
-//     const response = await fetch(apiPropertiesUrl);
-//     if (!response.ok) {
-//       throw new Error('Backend no disponible');
-//     }
-//     const data = await response.json();
-//     return data.map(normalizeProperty);
-//   } catch (error) {
-//     return fetch('JSON/properties.json')
-//       .then(response => response.json())
-//       .then(properties => properties.map(normalizeProperty));
-//   }
-// }
-
 async function fetchProperties() {
   try {
     const { data, error } = await supabase
