@@ -209,12 +209,163 @@ function toFloat(value) {
 });
 
 
-async function loadData() {
+// -------------------- LÓGICA DE TABS PARA CAMBIAR ENTRE ELLOS --------------------
+const tabs = document.querySelectorAll("#menuTabs button");
+    const contents = document.querySelectorAll(".tab-content");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+
+        // quitar active de botones
+        tabs.forEach(t => t.classList.remove("active"));
+
+        // ocultar contenido
+        contents.forEach(c => c.classList.add("d-none"));
+
+        // activar el seleccionado
+        tab.classList.add("active");
+        document.getElementById(tab.dataset.tab).classList.remove("d-none");
+      });
+    });
+
+
+// -------------------- LÓGICA PARA CARGAR PROPIEDADES DESDE BACKEND O JSON LOCAL --------------------
+async function loadProperties() {
   const { data, error } = await supabase
     .from('propiedades')
     .select('*');
 
-  console.log(data);
+  if (error) {
+    console.error(error);
+    return;
+  }
+
+  const container = document.getElementById('propertyList');
+  container.innerHTML = '';
+
+  data.forEach(prop => {
+    const card = document.createElement('div');
+    card.className = 'col-md-4';
+
+    card.innerHTML = `
+      <div class="card shadow-sm h-100" style="cursor:pointer;">
+        <div class="card-body">
+          <h5>${prop.titulo}</h5>
+          <p>$${prop.precio}</p>
+          <small>${prop.tipoPropiedad}</small>
+        </div>
+      </div>
+    `;
+
+    // CLICK → cargar datos para editar
+    card.addEventListener('click', () => loadPropertyToEdit(prop));
+
+    container.appendChild(card);
+  });
 }
 
-loadData();
+  // -------------------- LÓGICA PARA CARGAR DATOS DE PROPIEDADES DESDE BACKEND O JSON LOCAL (CON FALLO CONTROLADO) --------------------
+function loadPropertyToEdit(prop) {
+  document.getElementById('editSection').classList.remove('d-none');
+
+  document.getElementById('editId').value = prop.id;
+  document.getElementById('editTitulo').value = prop.titulo;
+  document.getElementById('editSubtitulo').value = prop.subtitulo;
+  document.getElementById('editTransaccion').value = prop.transaccion;
+  document.getElementById('editPrecio').value = prop.precio;
+  document.getElementById('editTipoPropiedad').value = prop.tipoPropiedad;
+  document.getElementById('editTerreno').value = prop.terreno;
+  document.getElementById('editConstruccion').value = prop.construccion;
+  document.getElementById('editOcupacion').value = prop.ocupacion;
+  document.getElementById('editPago').value = prop.pago;
+  document.getElementById('editDescripcion').value = prop.descripcion;
+  document.getElementById('editGoogleMaps').value = prop.maps_url;
+  document.getElementById('editVideos').value = prop.video;
+  document.getElementById('editServicios').value = prop.servicios;
+  document.getElementById('editRecamaras').value = prop.recamaras;
+  document.getElementById('editBanos').value = prop.banos;
+  document.getElementById('editCarros').value = prop.carros;
+}
+
+  // -------------------- ACTUALIZAR PROPIEDAD --------------------
+  document.getElementById('updateBtn').addEventListener('click', async () => {
+  const id = document.getElementById('editId').value;
+
+  const updates = {
+    titulo: document.getElementById('editTitulo').value,
+    subtitulo: document.getElementById('editSubtitulo').value,
+    transaccion: document.getElementById('editTransaccion').value,
+    precio: Number(document.getElementById('editPrecio').value),
+    tipoPropiedad: document.getElementById('editTipoPropiedad').value,
+    terreno: Number(document.getElementById('editTerreno').value),
+    construccion: Number(document.getElementById('editConstruccion').value),
+    ocupacion: document.getElementById('editOcupacion').value,
+    pago: document.getElementById('editPago').value,
+    descripcion: document.getElementById('editDescripcion').value,
+    maps_url: document.getElementById('editGoogleMaps').value,
+    video: document.getElementById('editVideos').value,
+    servicios: document.getElementById('editServicios').value,
+    recamaras: Number(document.getElementById('editRecamaras').value),
+    banos: Number(document.getElementById('editBanos').value),
+    carros: Number(document.getElementById('editCarros').value)
+  };
+
+  const { error } = await supabase
+    .from('propiedades')
+    .update(updates)
+    .eq('id', id);
+
+  if (error) {
+    alert('Error al actualizar');
+    console.error(error);
+    return;
+  }
+
+    alert('Propiedad actualizada ✅');
+    loadProperties();
+  });
+
+   // ---------- BORRAR PROPIEDAD ----------
+   document.getElementById('deleteBtn').addEventListener('click', async () => {
+  const id = document.getElementById('editId').value;
+
+  const confirmDelete = confirm('¿Seguro que quieres borrar esta propiedad?');
+  if (!confirmDelete) return;
+
+  const { error } = await supabase
+    .from('propiedades')
+    .delete()
+    .eq('id', id);
+
+  if (error) {
+    alert('Error al borrar');
+    console.error(error);
+    return;
+  }
+
+    alert('Propiedad eliminada 🗑️');
+
+    document.getElementById('editSection').classList.add('d-none');
+    loadProperties();
+  });
+
+
+   // ------------ CARGAR PROPIEDADES AL ENTRAR AL TAB ------------
+   tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+
+      tabs.forEach(t => t.classList.remove("active"));
+      contents.forEach(c => c.classList.add("d-none"));
+
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.tab).classList.remove("d-none");
+
+      // 👇 IMPORTANTE
+      if (tab.dataset.tab === "editar") {
+        loadProperties();
+      }
+    });
+  });
+
+  const id = document.getElementById('editId').value;
+  console.log("ID a actualizar:", id);
