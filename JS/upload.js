@@ -119,11 +119,12 @@ async function requireAuth() {
 }
 
 // 🚪 Logout correcto
-logoutButton.addEventListener('click', async () => {
-  await supabase.auth.signOut();
-  window.location.href = 'register.html';
-});
+  logoutButton.addEventListener('click', async () => {
+    await supabase.auth.signOut();
+    window.location.href = 'register.html';
+  });
 
+  // NO SE QUE HACE
 propertyForm.addEventListener('submit', async event => {
   event.preventDefault();
 
@@ -164,27 +165,27 @@ function toFloat(value) {
   return isNaN(num) ? null : num;
 }
 
-  const payload = {
-    titulo: document.getElementById('titulo').value.trim(),
-    subtitulo: document.getElementById('subtitulo').value.trim(),
-    transaccion: document.getElementById('transaccion').value,
-    precio: Number(document.getElementById('precio').value),
-    tipoPropiedad: document.getElementById('tipoPropiedad').value.trim(),
-    // terreno: parseFloat(document.getElementById('terreno').value) || null,
-    // construccion: parseFloat(document.getElementById('construccion').value) || null,
-    terreno: toFloat(document.getElementById('terreno').value),
-    construccion: toFloat(document.getElementById('construccion').value),
-    ocupacion: document.getElementById('ocupacion').value.trim() || null,
-    pago: document.getElementById('pago').value.trim() || null,
-    descripcion: document.getElementById('descripcion').value.trim() || null,
-    maps_url: document.getElementById('maps_url').value.trim() || null,
-    video: document.getElementById('video').value.trim() || null,
-    servicios: parseServicios(document.getElementById('servicios').value),
-    recamaras: Number(document.getElementById('recamaras').value) || null,
-    banos: toFloat(document.getElementById('banos').value) || null,
-    carros: Number(document.getElementById('carros').value) || null,
-    images: imageUrls
-  };
+const payload = {
+  titulo: document.getElementById('titulo').value.trim(),
+  subtitulo: document.getElementById('subtitulo').value.trim(),
+  transaccion: document.getElementById('transaccion').value,
+  precio: Number(document.getElementById('precio').value),
+  tipoPropiedad: document.getElementById('tipoPropiedad').value.trim(),
+  // terreno: parseFloat(document.getElementById('terreno').value) || null,
+  // construccion: parseFloat(document.getElementById('construccion').value) || null,
+  terreno: toFloat(document.getElementById('terreno').value),
+  construccion: toFloat(document.getElementById('construccion').value),
+  ocupacion: document.getElementById('ocupacion').value.trim() || null,
+  pago: document.getElementById('pago').value.trim() || null,
+  descripcion: document.getElementById('descripcion').value.trim() || null,
+  maps_url: document.getElementById('maps_url').value.trim() || null,
+  video: document.getElementById('video').value.trim() || null,
+  servicios: parseServicios(document.getElementById('servicios').value),
+  recamaras: Number(document.getElementById('recamaras').value) || null,
+  banos: toFloat(document.getElementById('banos').value) || null,
+  carros: Number(document.getElementById('carros').value) || null,
+  images: imageUrls
+};
 
   try {
     const { data, error } = await supabase
@@ -369,3 +370,63 @@ function loadPropertyToEdit(prop) {
 
   const id = document.getElementById('editId').value;
   console.log("ID a actualizar:", id);
+
+
+      /*--------------------
+      ---------------------- 
+              NEWS
+      ----------------------
+      ----------------------*/
+  const newsForm = document.getElementById('newsForm');
+
+newsForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const user = await requireAuth();
+  if (!user) return;
+
+  const files = document.getElementById('newsImage').files;
+
+  let imageUrls = [];
+
+  // 🔥 SUBIR IMÁGENES
+  for (let file of files) {
+    const fileName = `${user.id}/${Date.now()}-${file.name}`;
+
+    const { error: uploadError } = await supabase.storage
+      .from('news') // 👈 CAMBIASTE BUCKET
+      .upload(fileName, file);
+
+    if (uploadError) {
+      console.error(uploadError);
+      continue;
+    }
+
+    const { data } = supabase.storage
+      .from('news')
+      .getPublicUrl(fileName);
+
+    imageUrls.push(data.publicUrl);
+  }
+
+  // 🔥 PAYLOAD PARA TABLA news
+  const payload = {
+    title: document.getElementById('title').value.trim(),
+    category: document.getElementById('category').value.trim(),
+    content: document.getElementById('content').value.trim(),
+    newsImage: imageUrls // puede ser array o solo una
+  };
+console.log(payload);
+  const { error } = await supabase
+    .from('news')
+    .insert([payload]);
+
+  if (error) {
+    console.error(error);
+    alert('Error al publicar noticia');
+    return;
+  }
+
+  alert('Noticia publicada 🚀');
+  newsForm.reset();
+});

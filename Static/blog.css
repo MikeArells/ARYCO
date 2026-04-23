@@ -257,6 +257,10 @@ body {
 }
 
 /* ARTÍCULO */
+.articleContent {
+    white-space: pre-line;
+}
+
 .articleMain{
     font-family: Georgia, serif;
 }

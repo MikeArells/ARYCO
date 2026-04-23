@@ -1,125 +1,110 @@
-fetch("../JSON/news.json")
-.then(response => response.json())
-.then(data => {
+// fetch("../JSON/news.json")
+// .then(response => response.json())
+// .then(data => {
 
-    const recentContainer = document.querySelector(".recentNews");
-    const featuredContainer = document.querySelector(".featuredNews");
-    const trendsContainer = document.querySelector(".trends");
+//     const recentContainer = document.querySelector(".recentNews");
+//     const featuredContainer = document.querySelector(".featuredNews");
+//     const trendsContainer = document.querySelector(".trends");
 
-    // con esto recorremos todas las noticias
-    data.news.forEach(article => {
+//     // con esto recorremos todas las noticias
+//     data.news.forEach(article => {
 
-        // -------------------------
-        // NOTICIA DESTACADA
-        // -------------------------
-        if(article.featured){
+//         // -------------------------
+//         // NOTICIA DESTACADA
+//         // -------------------------
+//         if(article.featured){
 
-            featuredContainer.innerHTML = `
-                <a href="article.html?id=${article.id}" class="newsLink">
-                    <img class="featPhoto" src="${article.image}" alt="${article.title}">
-                    <span class="category">${article.category}</span>
-                    <h4>${article.title}</h4>
-                    <p>${article.summary}</p>
-                </a>
-            `;
-            featuredRendered = true;
-        }
+//             featuredContainer.innerHTML = `
+//                 <a href="article.html?id=${article.id}" class="newsLink">
+//                     <img class="featPhoto" src="${article.image}" alt="${article.title}">
+//                     <span class="category">${article.category}</span>
+//                     <h4>${article.title}</h4>
+//                     <p>${article.summary}</p>
+//                 </a>
+//             `;
+//             featuredRendered = true;
+//         }
 
-        // -------------------------
-        // NOTICIAS RECIENTES
-        // -------------------------
-    // const newsLink = document.createElement("a");
-
-    // newsLink.href = `article.html?id=${article.id}`;
-    // newsLink.classList.add("newsLink");
-
-    // newsLink.innerHTML = `
-    //     <div class="newsItem">
-    //         <span class="category">${article.category}</span>
-    //         <h6 class="title">${article.title}</h6>
-    //         <span class="author">${article.readTime}</span>
-    //     </div>
-    // `;
-
-    // recentContainer.appendChild(newsLink);
-        if(article.recent){
+//         // -------------------------
+//         // NOTICIAS RECIENTES
+//         // -------------------------
+//         if(article.recent){
             
-            const newsLink = document.createElement("a");
+//             const newsLink = document.createElement("a");
 
-            newsLink.href = `article.html?id=${article.id}`;
-            newsLink.classList.add("newsLink");
+//             newsLink.href = `article.html?id=${article.id}`;
+//             newsLink.classList.add("newsLink");
 
-            newsLink.innerHTML = `
-                <div class="newsItem">
-                    <span class="category">${article.category}</span>
-                    <h6 class="title">${article.title}</h6>
-                    <span class="author">${article.readTime}</span>
-                </div>
-            `;
+//             newsLink.innerHTML = `
+//                 <div class="newsItem">
+//                     <span class="category">${article.category}</span>
+//                     <h6 class="title">${article.title}</h6>
+//                     <span class="author">${article.readTime}</span>
+//                 </div>
+//             `;
 
-            recentContainer.appendChild(newsLink);
-        }
+//             recentContainer.appendChild(newsLink);
+//         }
 
-        // -------------------------
-        // TENDENCIAS
-        // -------------------------
-        if(article.trending){
+//         // -------------------------
+//         // TENDENCIAS
+//         // -------------------------
+//         if(article.trending){
 
-            const trendItem = document.createElement("a");
+//             const trendItem = document.createElement("a");
 
-            trendItem.href = `article.html?id=${article.id}`;
-            trendItem.classList.add("newsLink");
+//             trendItem.href = `article.html?id=${article.id}`;
+//             trendItem.classList.add("newsLink");
 
-            trendItem.innerHTML = `
-                <div class="newsItem">
-                    <span class="category">${article.category}</span>
-                    <h6>${article.title}</h6>
-                    <span class="author">${article.readTime}</span>
-                </div>
-            `;
+//             trendItem.innerHTML = `
+//                 <div class="newsItem">
+//                     <span class="category">${article.category}</span>
+//                     <h6>${article.title}</h6>
+//                     <span class="author">${article.readTime}</span>
+//                 </div>
+//             `;
 
-            trendsContainer.appendChild(trendItem);
-        }
+//             trendsContainer.appendChild(trendItem);
+//         }
 
-    });
+//     });
 
-        // -------------------------
-        // 4 CARDS DEBAJO DE FEATURED
-        // -------------------------
-    const featuredCards = data.news
-    .filter(a => !a.featured) // que no sea la grande
-    .slice(0, 4); // solo 4
+//         // -------------------------
+//         // 4 CARDS DEBAJO DE FEATURED
+//         // -------------------------
+//     const featuredCards = data.news
+//     .filter(a => !a.featured) // que no sea la grande
+//     .slice(0, 4); // solo 4
 
-    const cardsContainer = document.createElement("div");
-    cardsContainer.classList.add("cards-container");
+//     const cardsContainer = document.createElement("div");
+//     cardsContainer.classList.add("cards-container");
 
-    featuredCards.forEach(article => {
+//     featuredCards.forEach(article => {
 
-        const card = document.createElement("a");
-        card.href = `article.html?id=${article.id}`;
-        card.classList.add("card", "newsLink");
+//         const card = document.createElement("a");
+//         card.href = `article.html?id=${article.id}`;
+//         card.classList.add("card", "newsLink");
 
-        card.innerHTML = `
-            <img src="${article.image}" alt="${article.title}">
-            <div class="card-content">
-                <span class="category">${article.category}</span>
-                <h5>${article.title}</h5>
-            </div>
-        `;
+//         card.innerHTML = `
+//             <img src="${article.image}" alt="${article.title}">
+//             <div class="card-content">
+//                 <span class="category">${article.category}</span>
+//                 <h5>${article.title}</h5>
+//             </div>
+//         `;
 
-        cardsContainer.appendChild(card);
-    });
+//         cardsContainer.appendChild(card);
+//     });
 
-    // 👇 IMPORTANTE: se agrega debajo, no reemplaza
-    featuredContainer.appendChild(cardsContainer);
+//     // 👇 IMPORTANTE: se agrega debajo, no reemplaza
+//     featuredContainer.appendChild(cardsContainer);
 
-})
-.catch(err => console.error("Error cargando noticias:", err));
+// })
+// .catch(err => console.error("Error cargando noticias:", err));
 
 
 
 //-------------  CALCULAR LA FECHA -------------
-
   const nombreDia = new Intl.DateTimeFormat('es-MX', { weekday: 'long' });
   const nombreMes = new Intl.DateTimeFormat('es-MX', { month: 'long' });
 
@@ -143,7 +128,6 @@ fetch("../JSON/news.json")
 
 
   //----------------- NAV HAMBURGER -------------------
-
 const hamburger = document.getElementById("hamburger");  //buscamos en HTML elemento hamburges
 const navWrapper = document.getElementById("nav-wrapper");
 
@@ -151,4 +135,151 @@ hamburger.addEventListener("click", () => {  //“Cuando el usuario haga click e
     navWrapper.classList.toggle("active");     //Si nav-wrapper NO tiene la clase active → la agrega, Si SÍ la tiene → la quita
 });
 
+//----------------- GENERAR DATOS DESDE SUPABASE -------------------
+async function cargarNoticias() {
 
+    const supabase = window.supabase;
+
+    const { data: news, error } = await supabase
+        .from('news')
+        .select('*')
+        .order('created_at', { ascending: false });
+
+    if (error) {
+        console.error(error);
+        return;
+    }
+
+    const recentContainer = document.querySelector(".recentNews");
+    const featuredContainer = document.querySelector(".featuredNews");
+    const trendsContainer = document.querySelector(".trends");
+
+    news.forEach((article, index) => {
+
+        // console.log(article);
+
+        // 🔥 MANEJO DE IMAGEN (por si es jsonb)
+        let imageUrl = "";
+
+        if (typeof article.image === "string") {
+            imageUrl = article.image;
+        } else if (article.image?.url) {
+            imageUrl = article.image.url;
+        }
+
+        // -------------------------
+        // 🥇 PRIMERA NOTICIA = DESTACADA
+        // -------------------------
+        if(index === 0){
+            featuredContainer.innerHTML = `
+                <a href="article.html?id=${article.id ?? ''}" class="newsLink">
+                    <img class="featPhoto" src="${article.newsImage}" alt="${article.title}">
+                    <span class="category">${article.category}</span>
+                    <h4>${article.title}</h4>
+                    <p>${article.summary}</p>
+                </a>
+            `;
+        }
+        // -------------------------
+        // 📰 NOTICIAS
+        // -------------------------
+        // if(article.category?.toLowerCase() === "noticias"){
+        //     recentContainer.innerHTML += `
+        //         <a href="article.html?id=${article.id ?? ''}" class="newsItem">
+        //             <h6>${article.title}</h6>
+        //             <span class="author">${article.readTime}</span>
+        //         </a>
+        //     `;
+        // }
+
+        if(article.category?.toLowerCase() === "noticias"){
+            
+            const newsLink = document.createElement("a");
+
+            newsLink.href = `article.html?id=${article.id}`;
+            newsLink.classList.add("newsLink");
+
+            newsLink.innerHTML = `
+                <div class="newsItem">
+                    <span class="category">${article.category}</span>
+                    <h6 class="title">${article.title}</h6>
+                    <span class="author">${article.readTime}</span>
+                </div>
+            `;
+
+            recentContainer.appendChild(newsLink);
+        }
+
+        // -------------------------
+        // 📈 TENDENCIAS
+        // -------------------------
+        // if(article.category?.toLowerCase() === "tendencias"){
+        //     trendsContainer.innerHTML += `
+        //         <a href="article.html?id=${article.id ?? ''}" class="newsItem">
+        //             <h6>${article.title}</h6>
+        //             <span class="author">${article.readTime}</span>
+        //         </a>
+        //     `;
+        // }
+
+
+        if(article.category?.toLowerCase() === "tendencias"){
+
+            const trendItem = document.createElement("a");
+
+            trendItem.href = `article.html?id=${article.id}`;
+            trendItem.classList.add("newsLink");
+
+            trendItem.innerHTML = `
+                <div class="newsItem">
+                    <span class="category">${article.category}</span>
+                    <h6>${article.title}</h6>
+                    <span class="author">${article.readTime}</span>
+                </div>
+            `;
+
+            trendsContainer.appendChild(trendItem);
+        }
+
+    });
+
+}
+
+cargarNoticias();
+
+
+
+
+
+    // ------------- SEPARAR NOTICIAS EN BLOQUES -------------------
+    // const primerasNoticias = news.slice(0, 6); // sección principal
+    // const masNoticias = news.slice(6); // resto
+
+    // // ------------- RENDERIZAR CADA SECCIÓN POR SEPARADO -------------------
+    // const featuredContainer = document.querySelector('.featuredNews');
+
+    // primerasNoticias.forEach(noticia => {
+    // featuredContainer.innerHTML += `
+    //     <div class="card">
+    //     <img src="${noticia.imagen}" />
+    //     <h3>${noticia.titulo}</h3>
+    //     </div>
+    // `;
+    // });
+
+    // // --------- Para la sección "Más noticias" --------------
+    // const moreContainer = document.getElementById('moreNewsContainer');
+
+    // masNoticias.forEach(noticia => {
+    // moreContainer.innerHTML += `
+    //     <div class="card small">
+    //     <h4>${noticia.titulo}</h4>
+    //     </div>
+    // `;
+    // });
+
+    //     // ------------- FILTRAR POR CATEGORÍA (si quieres secciones específicas) -------------------
+    // const tendencias = news.filter(n => n.categoria === 'tendencias');
+    // const noticiasNormales = news.filter(n => n.categoria === 'noticias');
+// }
+// cargarNoticias();

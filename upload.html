@@ -36,7 +36,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <button class="nav-link text-white" data-tab="analysis">Analisis</button>
           </li>
           <li class="nav-item">
-            <button class="nav-link text-white" data-tab="news">Registro de noticias</button>
+            <button class="nav-link text-white" data-tab="register-news">Registro de noticias</button>
           </li>
           <li class="nav-item">
             <button class="nav-link text-white" data-tab="news">Editar / Borrar noticias</button>
@@ -274,6 +274,64 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <p>Aquí puedes meter estadísticas, gráficas, etc.</p>
         </div>
 
+          <!-- TAB 4: REGISTRO DE NOTICIAS -->
+        <div class="tab-content" id="register-news">
+          <h1 class="mb-4">Subir una noticia</h1>
+          <p>Completa los datos de la noticia.</p>
+          <div id="successMessage" class="alert alert-success" style="display:none;"></div>
+          <div id="errorMessage" class="alert alert-danger" style="display:none;"></div>
+          
+          <form id="newsForm">
+
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <label for="titulo" class="form-label">Título</label>
+                <input type="text" class="form-control" id="title" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="subtitulo" class="form-label">Resumen</label>
+                <input type="text" class="form-control" id="summary" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="transaccion" class="form-label">Categoria</label>
+                <select id="category" class="form-select" required>
+                  <option value="">Selecciona</option>
+                  <option value="NOTICIAS">Noticias</option>
+                  <option value="TENDENCIAS">Tendencias</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="precio" class="form-label">Tiempo de lectura (minutos)</label>
+                <input type="number" class="form-control" id="readTime" step="0.01" required>
+              </div>
+
+              <div class="col-md-12">
+                <label for="content" class="form-label">Contenido</label>
+                <textarea class="form-control" id="content" rows="4" style="height: 200px;" required></textarea>
+              </div>
+
+              <div class="col-12">
+                <label for="newsImage" class="form-label">Imágen de la noticia</label>
+                <input type="file" class="form-control" id="newsImage" multiple accept="newsImage/*">
+                <small class="text-muted">Puedes seleccionar varias imágenes</small>
+              </div>
+
+            </div>
+            
+            <div class="mt-4">
+              <button type="submit" class="btn btn-primary">Publicar noticia</button>
+              
+            </div>
+
+          </form>
+        </div>
+
+
+
       </div>
 
     </div>
@@ -282,5 +340,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script> 
   <script src="JS/supabaseClient.js"></script>
   <script src="JS/upload.js"></script>
-</body>
+
+
+  </body>
 </html>
