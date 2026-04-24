@@ -351,7 +351,7 @@ function loadPropertyToEdit(prop) {
   });
 
 
-   // ------------ CARGAR PROPIEDADES AL ENTRAR AL TAB ------------
+   // ------------ CARGAR PROPIEDADES AL ENTRAR AL TAB EDITAR------------
    tabs.forEach(tab => {
     tab.addEventListener("click", () => {
 
@@ -365,6 +365,10 @@ function loadPropertyToEdit(prop) {
       if (tab.dataset.tab === "editar") {
         loadProperties();
       }
+
+      if (tab.dataset.tab === "edit-news") {
+        loadNews();
+      }
     });
   });
 
@@ -377,10 +381,41 @@ function loadPropertyToEdit(prop) {
               NEWS
       ----------------------
       ----------------------*/
+  async function loadNews() {
+  const { data, error } = await supabase
+    .from('news')
+    .select('*')
+    .order('created_at', { ascending: false });
+
+  if (error) {
+    console.error(error);
+    return;
+  }
+
+  const container = document.getElementById('newsList');
+  container.innerHTML = '';
+
+  data.forEach(article => {
+    const card = document.createElement('div');
+
+    card.innerHTML = `
+      <div class="card p-2" style="cursor:pointer;">
+        <h5>${article.title}</h5>
+        <small>${article.category}</small>
+      </div>
+    `;
+
+    // 👇 ESTO ES CLAVE
+    card.addEventListener('click', () => loadNewsToEdit(article));
+
+    container.appendChild(card);
+  });
+}
+      // ---------- SUBIR NEWS ----------  INVESTIGAR BIEN ????
   const newsForm = document.getElementById('newsForm');
 
-newsForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
+  newsForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
   const user = await requireAuth();
   if (!user) return;
@@ -413,6 +448,9 @@ newsForm.addEventListener('submit', async (e) => {
   const payload = {
     title: document.getElementById('title').value.trim(),
     category: document.getElementById('category').value.trim(),
+    summary: document.getElementById('summary').value.trim(),
+    author: document.getElementById('author').value.trim(),
+    readTime: Number(document.getElementById('readTime').value) || null,
     content: document.getElementById('content').value.trim(),
     newsImage: imageUrls // puede ser array o solo una
   };
@@ -429,4 +467,70 @@ console.log(payload);
 
   alert('Noticia publicada 🚀');
   newsForm.reset();
+});
+
+// ---------- EDITAR NEWS ----------
+function loadNewsToEdit(article) {
+  document.getElementById('editNewsSection').classList.remove('d-none');
+
+  document.getElementById('editId').value = article.id;
+  document.getElementById('editNewsTitle').value = article.title;
+  document.getElementById('editNewsCategory').value = article.category;
+  document.getElementById('editNewsSummary').value = article.summary;
+  document.getElementById('editNewsAuthor').value = article.author;
+  document.getElementById('editNewsReadTime').value = article.readTime;
+  document.getElementById('editNewsContent').value = article.content;
+}
+
+
+// ---------- ACTUALIZAR NEWS ----------
+document.getElementById('updateNewsBtn').addEventListener('click', async () => {
+  const id = document.getElementById('editId').value;
+
+  const updates = {
+    title: document.getElementById('editNewsTitle').value,
+    category: document.getElementById('editNewsCategory').value,
+    summary: document.getElementById('editNewsSummary').value,
+    author: document.getElementById('editNewsAuthor').value,
+    readTime: Number(document.getElementById('editNewsReadTime').value) || null,
+    content: document.getElementById('editNewsContent').value
+  };
+
+  const { error } = await supabase
+    .from('news')
+    .update(updates)
+    .eq('id', id);
+
+  if (error) {
+    alert('Error al actualizar');
+    console.error(error);
+    return;
+  }
+
+  alert('Noticia actualizada ✅');
+  loadNews();
+});
+
+// ---------- BORRAR NEWS ----------
+document.getElementById('deleteNewsBtn').addEventListener('click', async () => {
+  const id = document.getElementById('editId').value;
+
+  const confirmDelete = confirm('¿Seguro que quieres borrar esta noticia?');
+  if (!confirmDelete) return;
+
+  const { error } = await supabase
+    .from('news')
+    .delete()
+    .eq('id', id);
+
+  if (error) {
+    alert('Error al borrar');
+    console.error(error);
+    return;
+  }
+
+  alert('Noticia eliminada 🗑️');
+
+  document.getElementById('editNewsSection').classList.add('d-none');
+  loadNews();
 });

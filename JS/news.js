@@ -150,21 +150,26 @@ async function cargarNoticias() {
         return;
     }
 
+    // ------------- SEPARAR NOTICIAS EN BLOQUES -------------------
+    const topNews = news.slice(0, 15); // sección principal
+    const moreNews = news.slice(15); // resto
+
     const recentContainer = document.querySelector(".recentNews");
     const featuredContainer = document.querySelector(".featuredNews");
     const trendsContainer = document.querySelector(".trends");
+    const featuredCards = topNews.slice(1, 5); // las 4 siguientes a la featured
 
-    news.forEach((article, index) => {
+    topNews.forEach((article, index) => {
 
         // console.log(article);
 
         // 🔥 MANEJO DE IMAGEN (por si es jsonb)
         let imageUrl = "";
 
-        if (typeof article.image === "string") {
-            imageUrl = article.image;
-        } else if (article.image?.url) {
-            imageUrl = article.image.url;
+        if (Array.isArray(article.newsImage)) {
+            imageUrl = article.newsImage[0];
+        } else {
+            imageUrl = article.newsImage;
         }
 
         // -------------------------
@@ -173,12 +178,46 @@ async function cargarNoticias() {
         if(index === 0){
             featuredContainer.innerHTML = `
                 <a href="article.html?id=${article.id ?? ''}" class="newsLink">
-                    <img class="featPhoto" src="${article.newsImage}" alt="${article.title}">
+                    <img class="featPhoto" src="${imageUrl}" alt="${article.title}">
                     <span class="category">${article.category}</span>
                     <h4>${article.title}</h4>
                     <p>${article.summary}</p>
                 </a>
             `;
+
+            // 👇 CONTENEDOR DE CARDS
+            const cardsContainer = document.createElement("div");
+            cardsContainer.classList.add("cards-container");
+
+            featuredCards.forEach(cardArticle => {
+
+                let cardImage = "";
+
+                if (Array.isArray(cardArticle.newsImage)) {
+                    cardImage = cardArticle.newsImage[0];
+                } else {
+                    cardImage = cardArticle.newsImage;
+                }
+
+                const card = document.createElement("a");
+                card.href = `article.html?id=${cardArticle.id}`;
+                card.classList.add("card", "newsLink");
+
+                card.innerHTML = `
+                    <img src="${cardImage}" alt="${cardArticle.title}">
+                    <div class="card-content">
+                        <span class="category">${cardArticle.category}</span>
+                        <h5>${cardArticle.title}</h5>
+                    </div>
+                `;
+
+                cardsContainer.appendChild(card);
+            });
+
+            // 👇 ESTO ES CLAVE
+            featuredContainer.appendChild(cardsContainer);
+        
+ 
         }
         // -------------------------
         // 📰 NOTICIAS
@@ -221,7 +260,7 @@ async function cargarNoticias() {
         //         </a>
         //     `;
         // }
-
+        if (!article.id) return;
 
         if(article.category?.toLowerCase() === "tendencias"){
 
@@ -240,15 +279,84 @@ async function cargarNoticias() {
 
             trendsContainer.appendChild(trendItem);
         }
+        
 
     });
 
+                            //----------  MORE NEWS -------------
+            const moreContainer = document.querySelector(".moreNews");
+
+            moreNews.forEach(article => {
+
+                let imageUrl = "";
+
+                if (Array.isArray(article.newsImage)) {
+                    imageUrl = article.newsImage[0];
+                } else {
+                    imageUrl = article.newsImage;
+                }
+
+                const item = document.createElement("a");
+                item.href = `article.html?id=${article.id}`;
+                item.classList.add("newsLink");
+
+                item.innerHTML = `
+                    <div class="moreItem">
+                        <img src="${imageUrl}">
+                        <div>
+                            <span class="category">${article.category}</span>
+                            <h5>${article.title}</h5>
+                        </div>
+                    </div>
+                `;
+
+                moreContainer.appendChild(item);
+            });
+
+            console.log("TOTAL:", news.length);
+            console.log("TOP:", topNews.length);
+            console.log("MORE:", moreNews.length);
+
 }
+
+
 
 cargarNoticias();
 
 
 
+        // -------------------------
+//         // 4 CARDS DEBAJO DE FEATURED
+//         // -------------------------
+//     const featuredCards = data.news
+//     .filter(a => !a.featured) // que no sea la grande
+//     .slice(0, 4); // solo 4
+
+//     const cardsContainer = document.createElement("div");
+//     cardsContainer.classList.add("cards-container");
+
+//     featuredCards.forEach(article => {
+
+//         const card = document.createElement("a");
+//         card.href = `article.html?id=${article.id}`;
+//         card.classList.add("card", "newsLink");
+
+//         card.innerHTML = `
+//             <img src="${article.image}" alt="${article.title}">
+//             <div class="card-content">
+//                 <span class="category">${article.category}</span>
+//                 <h5>${article.title}</h5>
+//             </div>
+//         `;
+
+//         cardsContainer.appendChild(card);
+//     });
+
+//     // 👇 IMPORTANTE: se agrega debajo, no reemplaza
+//     featuredContainer.appendChild(cardsContainer);
+
+// })
+// .catch(err => console.error("Error cargando noticias:", err));
 
 
     // ------------- SEPARAR NOTICIAS EN BLOQUES -------------------

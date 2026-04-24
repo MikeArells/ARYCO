@@ -232,6 +232,22 @@ body {
   margin-top: 5px;
 }
 
+/* MORE NEWS */
+.moreNews {
+  margin-top: 40px;
+}
+
+.moreItem {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.moreItem img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+}
 
 /*-----------------------
 -------------------------

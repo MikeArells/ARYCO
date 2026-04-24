@@ -39,7 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <button class="nav-link text-white" data-tab="register-news">Registro de noticias</button>
           </li>
           <li class="nav-item">
-            <button class="nav-link text-white" data-tab="news">Editar / Borrar noticias</button>
+            <button class="nav-link text-white" data-tab="edit-news">Editar / Borrar noticias</button>
           </li>
         </ul>
         <button type="button" class="btn btn-secondary" id="logoutButton">Cerrar sesión</button>
@@ -275,7 +275,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
 
           <!-- TAB 4: REGISTRO DE NOTICIAS -->
-        <div class="tab-content" id="register-news">
+        <div class="tab-content d-none" id="register-news">
           <h1 class="mb-4">Subir una noticia</h1>
           <p>Completa los datos de la noticia.</p>
           <div id="successMessage" class="alert alert-success" style="display:none;"></div>
@@ -291,17 +291,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
 
               <div class="col-md-6">
-                <label for="subtitulo" class="form-label">Resumen</label>
-                <input type="text" class="form-control" id="summary" required>
-              </div>
-
-              <div class="col-md-6">
                 <label for="transaccion" class="form-label">Categoria</label>
                 <select id="category" class="form-select" required>
                   <option value="">Selecciona</option>
                   <option value="NOTICIAS">Noticias</option>
                   <option value="TENDENCIAS">Tendencias</option>
                 </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="subtitulo" class="form-label">Resumen</label>
+                <input type="text" class="form-control" id="summary" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="subtitulo" class="form-label">Autor</label>
+                <input type="text" class="form-control" id="author">
               </div>
 
               <div class="col-md-6">
@@ -316,7 +321,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
               <div class="col-12">
                 <label for="newsImage" class="form-label">Imágen de la noticia</label>
-                <input type="file" class="form-control" id="newsImage" multiple accept="newsImage/*">
+                <input type="file" class="form-control" id="newsImage" multiple accept="newsImage/*" required>
                 <small class="text-muted">Puedes seleccionar varias imágenes</small>
               </div>
 
@@ -324,23 +329,69 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             
             <div class="mt-4">
               <button type="submit" class="btn btn-primary">Publicar noticia</button>
-              
             </div>
 
           </form>
         </div>
 
+          <!------------------- TAB 5: EDITAR NOTICIAS ----------------->
+        <div class="tab-content d-none" id="edit-news">
+          <h1>Editar / Borrar noticias</h1>
+          
+                  <!-- LISTA DE NOTICIAS -->
+          <div id="newsList" class="row g-3 mt-3"></div>
 
+          <hr>
+
+                  <!-- FORM DE EDICIÓN -->
+          <div id="editNewsSection" class="mt-4 d-none">
+            <h4>Editar noticias</h4>
+
+            <input type="hidden" id="editId">
+
+            <div class="mb-3">
+              <label>Título</label>
+              <input type="text" id="editNewsTitle" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Categoria</label>
+              <input type="text" id="editNewsCategory" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Resumen</label>
+              <input type="text" id="editNewsSummary" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Autor</label>
+              <input type="text" id="editNewsAuthor" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label>Tiempo de lectura (minutos)</label>
+              <input type="number" id="editNewsReadTime" class="form-control" step="0.01">
+            </div>
+
+            <div class="mb-3">
+              <label>Contenido</label>
+              <textarea class="form-control" id="editNewsContent" rows="4" style="height: 150px;"></textarea>
+            </div>
+
+            <button class="btn btn-success" id="updateNewsBtn">Actualizar</button>
+            <button class="btn btn-danger" id="deleteNewsBtn">Borrar</button>
+          </div>
+        </div>
 
       </div>
-
     </div>
   </section>
+  
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script> 
   <script src="JS/supabaseClient.js"></script>
   <script src="JS/upload.js"></script>
-
 
   </body>
 </html>
