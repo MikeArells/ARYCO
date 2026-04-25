@@ -238,7 +238,7 @@ async function cargarNoticias() {
             <div class="newsItem">
                 <span class="category">${article.category}</span>
                 <h6>${article.title}</h6>
-                <span>${article.readTime}</span>
+                <span>${article.readTime} min${article.readTime == 1 ? '' : 's'} lectura</span>
             </div>
         `;
 
@@ -258,7 +258,7 @@ async function cargarNoticias() {
             <div class="newsItem">
                 <span class="category">${article.category}</span>
                 <h6>${article.title}</h6>
-                <span>${article.readTime}</span>
+                <span>${article.readTime} min${article.readTime == 1 ? '' : 's'} lectura</span>
             </div>
         `;
 
