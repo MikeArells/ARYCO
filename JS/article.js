@@ -91,6 +91,19 @@ async function cargarArticulo() {
 
     document.getElementById("title").textContent = article.title;
     document.getElementById("category").textContent = article.category;
+    document.getElementById("author").textContent = article.author;
+    document.getElementById("date").textContent = new Date(article.created_at).toLocaleDateString('es-MX', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
+    const authorElement = document.getElementById("author");
+    // const authorName = article.author; // o lo que venga de tu backend
+
+    if (article.author) {
+        authorElement.textContent = "Por " + article.author;
+    }
 
     // 🔥 Manejo de imagen (string o jsonb)
     let imageUrl = "";
@@ -123,7 +136,7 @@ document.getElementById("image").src = imageUrl;
 cargarArticulo();
 
 
-// ------------------ FECHA ------------------
+// ------------------ DATE TOP ------------------
 const nombreDia = new Intl.DateTimeFormat('es-MX', { weekday: 'long' });
 const nombreMes = new Intl.DateTimeFormat('es-MX', { month: 'long' });
 
@@ -143,6 +156,43 @@ function actualizarFecha() {
 }
 
 actualizarFecha();
+
+// ------------------ LOAD POPULAR ARTICLES IN SIDEBAR ------------------
+async function cargarPopulares() {
+    const supabase = window.supabase;
+
+    const { data: populares, error } = await supabase
+        .from('news')
+        .select('*')
+        // .order('views', { ascending: false }) // 👈 los más vistos
+        .order('created_at', { ascending: false })
+        .limit(4);
+
+    const container = document.getElementById("popularContainer");
+
+    container.innerHTML = "";
+
+    populares.forEach(item => {
+        container.innerHTML += `
+            <a class="editorItem" href='/Blog/article.html?id=${item.id}' >
+                <img src="${item.newsImage}">
+                <h4>${item.title}</h4>
+            </a>
+        `;
+    });
+}
+
+cargarPopulares();
+
+// Si quieres que cada artículo popular sea clickeable y lleve a su detalle:
+// populares.forEach(item => {
+//     container.innerHTML += `
+//         <a class="editorItem" onclick="window.location.href='detalle.html?id=${item.id}'">
+//             <img src="${item.newsImage}">
+//             <h4>${item.title}</h4>
+//         </a>
+//     `;
+// });
 
 
 // ------------------ NAV HAMBURGER ------------------

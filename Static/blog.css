@@ -301,9 +301,10 @@ body {
 }
 
 .articleMeta{
-    font-size:12px;
+    font-size:14px;
     color:#777;
-    margin-bottom:20px;
+    margin-bottom:15px;
+    margin-top:10px;
 }
 
 .articleImage{
@@ -333,6 +334,9 @@ body {
     display:flex;
     gap:10px;
     margin-bottom:15px;
+    
+    text-decoration: none;
+    color: inherit;
 }
 
 .editorItem img{
