@@ -384,3 +384,21 @@ body {
 .ctaButton:hover {
   background: #f1f1f1;
 }
+
+
+
+/*----------------------- Share Button -----------------------*/
+/* .shareBtn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #1877f2;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.shareBtn:hover {
+  background-color: #145dc1;
+}  */

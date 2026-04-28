@@ -184,6 +184,13 @@ async function cargarPopulares() {
 
 cargarPopulares();
 
+ // DINAMICO CON ID 
+const currentUrl = window.location.href;
+
+const shareBtn = document.getElementById("shareFacebook");
+
+shareBtn.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+
 // Si quieres que cada artículo popular sea clickeable y lleve a su detalle:
 // populares.forEach(item => {
 //     container.innerHTML += `
