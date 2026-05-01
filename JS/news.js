@@ -304,8 +304,8 @@ app.get('/article/:id', async (req, res) => {
     <html>
       <head>
         <meta property="og:title" content="${article.title}">
-        <meta property="og:description" content="${article.description}">
-        <meta property="og:image" content="${article.image}">
+        <meta property="og:description" content="${article.content.substring(0, 150)}...">
+        <meta property="og:image" content="${article.newsImage}">
         <meta property="og:url" content="https://tusitio.com/article/${article.id}">
       </head>
       <body>
