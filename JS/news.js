@@ -295,6 +295,26 @@ async function cargarNoticias() {
 
 document.addEventListener("DOMContentLoaded", cargarNoticias);
 
+
+
+app.get('/article/:id', async (req, res) => {
+  const article = await getArticle(req.params.id);
+
+  res.send(`
+    <html>
+      <head>
+        <meta property="og:title" content="${article.title}">
+        <meta property="og:description" content="${article.description}">
+        <meta property="og:image" content="${article.image}">
+        <meta property="og:url" content="https://tusitio.com/article/${article.id}">
+      </head>
+      <body>
+        <script>window.location="/Blog/article.html?id=${article.id}"</script>
+      </body>
+    </html>
+  `);
+});
+
     // 6 y 6 para noticias y tendencias /******************* */
 
         // 🔥 separar por categoría
