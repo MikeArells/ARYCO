@@ -174,7 +174,7 @@ async function cargarPopulares() {
 
     populares.forEach(item => {
         container.innerHTML += `
-            <a class="editorItem" href='/Blog/article.html?id=${item.id}' >
+            <a class="editorItem" href='https://aryco-eta.vercel.app/api/article?id=${item.id}' >
                 <img src="${item.newsImage}">
                 <h4>${item.title}</h4>
             </a>
@@ -185,7 +185,7 @@ async function cargarPopulares() {
 cargarPopulares();
 
  // DINAMICO CON ID 
-const currentUrl = window.location.href;
+const currentUrl = `https://aryco-eta.vercel.app/api/article?id=${articleId}`;
 
 const shareBtn = document.getElementById("shareFacebook");
 

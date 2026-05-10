@@ -41,12 +41,15 @@ export default async function handler(req, res) {
 
       <meta name="twitter:card" content="summary_large_image">
 
-      <meta http-equiv="refresh" content="0; url=/Blog/article.html?id=${article.id}" />
-
+         
     </head>
 
     <body>
       Redireccionando...
+
+        <script>
+            window.location.href="/Blog/article.html?id=${article.id}";
+        </script>  
     </body>
     </html>
   `);
