@@ -1,4 +1,6 @@
 backend/
 *.bat
 *.class
+.env
+.env.local
 target/

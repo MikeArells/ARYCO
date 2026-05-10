@@ -151,17 +151,17 @@ async function cargarNoticias() {
     }
 
     
- const recentContainer = document.querySelector(".recentNews");
+    const recentContainer = document.querySelector(".recentNews");
     const featuredContainer = document.querySelector(".featuredNews");
     const trendsContainer = document.querySelector(".trends");
     const moreContainer = document.querySelector(".moreNews");
 
     console.log({
-  recentContainer,
-  featuredContainer,
-  trendsContainer,
-  moreContainer
-});
+        recentContainer,
+        featuredContainer,
+        trendsContainer,
+        moreContainer
+    });
 
     // 🔥 separar por categoría
     const noticias = news.filter(n => n.category?.toLowerCase() === "noticias");
