@@ -64,6 +64,8 @@ const supabase = createClient(
 
 export default async function handler(req, res) {
 
+  console.log("REQUEST FROM:", req.headers["user-agent"]);
+
   const { id } = req.query;
 
   const { data: article, error } = await supabase
@@ -71,6 +73,9 @@ export default async function handler(req, res) {
     .select('*')
     .eq('id', id)
     .single();
+
+    console.log(article);
+     console.log(error);
 
   if (error || !article) {
     return res.status(404).send('Artículo no encontrado');
