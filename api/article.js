@@ -76,11 +76,18 @@ export default async function handler(req, res) {
     return res.status(404).send('Artículo no encontrado');
   }
 
+  // Si newsImage es array, toma la primera
   const imageUrl = Array.isArray(article.newsImage)
-    ? article.newsImage[0] || ''
-    : article.newsImage || '';
+    ? article.newsImage[0]
+    : article.newsImage;
 
-  const pageUrl = `https://aryco-eta.vercel.app/api/article?id=${article.id}`;
+  // Renderizar contenido
+  let contentHtml = '';
+  if (Array.isArray(article.content)) {
+    contentHtml = article.content.map(parrafo => `<p>${parrafo}</p>`).join('');
+  } else {
+    contentHtml = `<p>${article.content}</p>`;
+  }
 
   res.setHeader('Content-Type', 'text/html');
 
@@ -89,28 +96,23 @@ export default async function handler(req, res) {
     <html lang="es">
     <head>
 
-      <meta charset="UTF-8" />
-
       <title>${article.title}</title>
 
-      <meta property="og:title" content="${article.title}" />
-      <meta property="og:description" content="${article.summary || ''}" />
-      <meta property="og:image" content="${imageUrl}" />
-      <meta property="og:url" content="${pageUrl}" />
-      <meta property="og:type" content="article" />
+      <meta property="og:title" content="${article.title}">
+      <meta property="og:description" content="${article.summary || ''}">
+      <meta property="og:image" content="${imageUrl}">
+      <meta property="og:url" content="https://aryco-eta.vercel.app/api/article?id=${article.id}">
+      <meta property="og:type" content="article">
 
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="${article.title}" />
-      <meta name="twitter:description" content="${article.summary || ''}" />
-      <meta name="twitter:image" content="${imageUrl}" />
+      <meta name="twitter:card" content="summary_large_image">
 
-      <meta http-equiv="refresh" content="2; url=/Blog/article.html?id=${article.id}" />
-
+         
     </head>
 
     <body>
       <h1>${article.title}</h1>
-      <p>Redireccionando...</p>
+      ${contentHtml}
+      <img src="${imageUrl}" alt="${article.title}">
     </body>
     </html>
   `);

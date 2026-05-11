@@ -116,6 +116,12 @@ async function cargarArticulo() {
 
 document.getElementById("image").src = imageUrl;
 
+    // Actualizar meta tags para compartir
+    document.querySelector('meta[property="og:title"]').setAttribute('content', article.title);
+    document.querySelector('meta[property="og:description"]').setAttribute('content', article.summary || '');
+    document.querySelector('meta[property="og:image"]').setAttribute('content', imageUrl);
+    document.querySelector('meta[property="og:url"]').setAttribute('content', window.location.href);
+
     // ------------------ CONTENIDO ------------------
 
     const container = document.querySelector(".articleContent");
@@ -174,7 +180,7 @@ async function cargarPopulares() {
 
     populares.forEach(item => {
         container.innerHTML += `
-            <a class="editorItem" href='https://aryco-eta.vercel.app/api/article?id=${item.id}' >
+            <a class="editorItem" href='/Blog/article.html?id=${item.id}' >
                 <img src="${item.newsImage}">
                 <h4>${item.title}</h4>
             </a>
