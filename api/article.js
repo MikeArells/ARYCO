@@ -63,9 +63,6 @@ const supabase = createClient(
 );
 
 export default async function handler(req, res) {
-
-  console.log("REQUEST FROM:", req.headers["user-agent"]);
-
   const { id } = req.query;
 
   const { data: article, error } = await supabase
@@ -73,9 +70,6 @@ export default async function handler(req, res) {
     .select('*')
     .eq('id', id)
     .single();
-
-    console.log(article);
-     console.log(error);
 
   if (error || !article) {
     return res.status(404).send('Artículo no encontrado');
@@ -94,25 +88,22 @@ export default async function handler(req, res) {
     contentHtml = `<p>${article.content}</p>`;
   }
 
-  res.setHeader('Content-Type', 'text/html');
+  res.setHeader('Content-Type', 'text/html; charset=UTF-8');
 
   res.send(`
     <!DOCTYPE html>
     <html lang="es">
     <head>
-
+      <meta charset="UTF-8" />
       <title>${article.title}</title>
-
+      <meta name="description" content="${article.summary || ''}" />
       <meta property="og:title" content="${article.title}">
       <meta property="og:description" content="${article.summary || ''}">
       <meta property="og:image" content="${imageUrl}">
       <meta property="og:url" content="https://aryco-eta.vercel.app/api/article?id=${article.id}">
       <meta property="og:type" content="article">
-
+      <meta property="og:site_name" content="ARYCO">
       <meta name="twitter:card" content="summary_large_image">
-
-         
-    </head>
 
     <body>
       <h1>${article.title}</h1>
