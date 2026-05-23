@@ -80,6 +80,19 @@ export default async function handler(req, res) {
     ? article.newsImage[0]
     : article.newsImage;
 
+  // Asegurarnos de que la URL de la imagen sea absoluta y accesible por los crawlers (Facebook)
+  function toAbsoluteImageUrl(url) {
+    if (!url) return url;
+    if (url.startsWith('http://') || url.startsWith('https://')) return url;
+    // Normalizar rutas relativas como ../Material/xxx -> /Material/xxx
+    const normalized = url.replace(/^([\.\/])+/, '/').replace(/\\/g, '/');
+    const host = req.headers.host || 'aryco-eta.vercel.app';
+    const proto = req.headers['x-forwarded-proto'] || 'https';
+    return `${proto}://${host}${normalized}`;
+  }
+
+  const absoluteImageUrl = toAbsoluteImageUrl(imageUrl);
+
   // Renderizar contenido
   let contentHtml = '';
   if (Array.isArray(article.content)) {
@@ -100,7 +113,7 @@ export default async function handler(req, res) {
       <link rel="canonical" href="https://aryco-eta.vercel.app/Blog/article.html?id=${article.id}" />
       <meta property="og:title" content="${article.title}">
       <meta property="og:description" content="${article.summary || ''}">
-      <meta property="og:image" content="${imageUrl}">
+      <meta property="og:image" content="${absoluteImageUrl}">
       <meta property="og:url" content="https://aryco-eta.vercel.app/Blog/article.html?id=${article.id}">
       <meta property="og:type" content="article">
       <meta property="og:site_name" content="ARYCO">
@@ -109,7 +122,7 @@ export default async function handler(req, res) {
     <body>
       <h1>${article.title}</h1>
       ${contentHtml}
-      <img src="${imageUrl}" alt="${article.title}">
+      <img src="${absoluteImageUrl}" alt="${article.title}">
     </body>
     </html>
   `);

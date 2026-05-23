@@ -191,7 +191,7 @@ async function cargarPopulares() {
 cargarPopulares();
 
  // DINAMICO CON ID 
-const currentUrl = `https://aryco-eta.vercel.app/api/article?id=${articleId}`;
+const currentUrl = `https://aryco-eta.vercel.app/Blog/article.html?id=${articleId}`;
 
 const shareBtn = document.getElementById("shareFacebook");
 
