@@ -110,11 +110,11 @@ export default async function handler(req, res) {
       <meta charset="UTF-8" />
       <title>${article.title}</title>
       <meta name="description" content="${article.summary || ''}" />
-      <link rel="canonical" href="https://aryco-eta.vercel.app/Blog/article.html?id=${article.id}" />
+      <link rel="canonical" href="https://aryco-eta.vercel.app/blog/${article.id}" />
       <meta property="og:title" content="${article.title}">
       <meta property="og:description" content="${article.summary || ''}">
       <meta property="og:image" content="${absoluteImageUrl}">
-      <meta property="og:url" content="https://aryco-eta.vercel.app/Blog/article.html?id=${article.id}">
+      <meta property="og:url" content="https://aryco-eta.vercel.app/blog/${article.id}">
       <meta property="og:type" content="article">
       <meta property="og:site_name" content="ARYCO">
       <meta name="twitter:card" content="summary_large_image">

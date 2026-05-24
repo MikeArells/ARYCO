@@ -187,7 +187,7 @@ async function cargarNoticias() {
             : featured.newsImage;
 
         featuredContainer.innerHTML = `
-            <a href="article.html?id=${featured.id}" class="newsLink">
+            <a href="/blog/${featured.id}" class="newsLink">
                 <img class="featPhoto" src="${imageUrl}" alt="${featured.title}">
                 <span class="category">${featured.category}</span>
                 <h4>${featured.title}</h4>
@@ -209,7 +209,7 @@ async function cargarNoticias() {
             : article.newsImage;
 
         const card = document.createElement("a");
-        card.href = `article.html?id=${article.id}`;
+        card.href = `/blog/${article.id}`;
         card.classList.add("card", "newsLink");
 
         card.innerHTML = `
@@ -231,7 +231,7 @@ async function cargarNoticias() {
     topNoticias.forEach(article => {
         const el = document.createElement("a");
 
-        el.href = `article.html?id=${article.id}`;
+        el.href = `/blog/${article.id}`;
         el.classList.add("newsLink");
 
         el.innerHTML = `
@@ -251,7 +251,7 @@ async function cargarNoticias() {
     topTendencias.forEach(article => {
         const el = document.createElement("a");
 
-        el.href = `article.html?id=${article.id}`;
+        el.href = `/blog/${article.id}`;
         el.classList.add("newsLink");
 
         el.innerHTML = `
@@ -275,7 +275,7 @@ async function cargarNoticias() {
             : article.newsImage;
 
         const item = document.createElement("a");
-        item.href = `article.html?id=${article.id}`;
+        item.href = `/blog/${article.id}`;
         item.classList.add("newsLink");
 
         item.innerHTML = `
@@ -302,213 +302,17 @@ app.get('/article/:id', async (req, res) => {
 
   res.send(`
     <html>
-      <head>
-        <meta property="og:title" content="${article.title}">
-        <meta property="og:description" content="${article.content.substring(0, 150)}...">
-        <meta property="og:image" content="${article.newsImage}">
-        <meta property="og:url" content="https://tusitio.com/article/${article.id}">
-      </head>
-      <body>
-        <script>window.location="/Blog/article.html?id=${article.id}"</script>
-      </body>
+            <head>
+                <meta property="og:title" content="${article.title}">
+                <meta property="og:description" content="${article.content.substring(0, 150)}...">
+                <meta property="og:image" content="${article.newsImage}">
+                <meta property="og:url" content="https://aryco-eta.vercel.app/blog/${article.id}">
+            </head>
+            <body>
+                <script>window.location="/blog/${article.id}"</script>
+            </body>
     </html>
   `);
 });
 
-    // 6 y 6 para noticias y tendencias /******************* */
-
-        // 🔥 separar por categoría
-//     const noticias = news.filter(n => n.category?.toLowerCase() === "noticias");
-//     const tendencias = news.filter(n => n.category?.toLowerCase() === "tendencias");
-
-//     // 🔥 aplicar límites
-//     const topNoticias = noticias.slice(0, 6);
-//     const topTendencias = tendencias.slice(0, 6);
-
-//     // 🔥 combinar para topNews
-//     const topNews = [...topNoticias, ...topTendencias];
-
-//     // 🔥 resto
-//     const moreNews = [
-//     ...noticias.slice(6),
-//     ...tendencias.slice(6)
-//     ];
-
-
-//     // ------------- SEPARAR NOTICIAS EN BLOQUES -------------------
-//     const topNews = news.slice(0, 15); // sección principal
-//     const moreNews = news.slice(15); // resto
-
-//     const recentContainer = document.querySelector(".recentNews");
-//     const featuredContainer = document.querySelector(".featuredNews");
-//     const trendsContainer = document.querySelector(".trends");
-//     // const featuredCards = topNews.slice(1, 5); // las 4 siguientes a la featured
-//     const featured = news[0];               //************ */
-//     const featuredCards = news.slice(1, 5); //*********** */
-
-//     // topNews.forEach((article, index) => {
-//         // FEATURED
-//     const featured = news[0]; //************ */
-//     const featuredCards = news.slice(1, 5); //*********** */
-
     
-
-//         // console.log(article);
-
-//         // 🔥 MANEJO DE IMAGEN (por si es jsonb)
-//         let imageUrl = "";
-
-//         if (Array.isArray(article.newsImage)) {
-//             imageUrl = article.newsImage[0];
-//         } else {
-//             imageUrl = article.newsImage;
-//         }
-
-//         // -------------------------
-//         // 🥇 PRIMERA NOTICIA = DESTACADA
-//         // -------------------------
-//         if(index === 0){
-//             featuredContainer.innerHTML = `
-//                 <a href="article.html?id=${article.id ?? ''}" class="newsLink">
-//                     <img class="featPhoto" src="${imageUrl}" alt="${article.title}">
-//                     <span class="category">${article.category}</span>
-//                     <h4>${article.title}</h4>
-//                     <p>${article.summary}</p>
-//                 </a>
-//             `;
-
-//             // 👇 CONTENEDOR DE CARDS
-//             const cardsContainer = document.createElement("div");
-//             cardsContainer.classList.add("cards-container");
-
-//             featuredCards.forEach(cardArticle => {
-
-//                 let cardImage = "";
-
-//                 if (Array.isArray(cardArticle.newsImage)) {
-//                     cardImage = cardArticle.newsImage[0];
-//                 } else {
-//                     cardImage = cardArticle.newsImage;
-//                 }
-
-//                 const card = document.createElement("a");
-//                 card.href = `article.html?id=${cardArticle.id}`;
-//                 card.classList.add("card", "newsLink");
-
-//                 card.innerHTML = `
-//                     <img src="${cardImage}" alt="${cardArticle.title}">
-//                     <div class="card-content">
-//                         <span class="category">${cardArticle.category}</span>
-//                         <h5>${cardArticle.title}</h5>
-//                     </div>
-//                 `;
-
-//                 cardsContainer.appendChild(card);
-//             });
-
-//             // 👇 ESTO ES CLAVE
-//             featuredContainer.appendChild(cardsContainer);
-        
- 
-//         }
-//         // -------------------------
-//         // 📰 NOTICIAS
-//         // -------------------------
-//         // if(article.category?.toLowerCase() === "noticias"){
-//         //     recentContainer.innerHTML += `
-//         //         <a href="article.html?id=${article.id ?? ''}" class="newsItem">
-//         //             <h6>${article.title}</h6>
-//         //             <span class="author">${article.readTime}</span>
-//         //         </a>
-//         //     `;
-//         // }
-
-//         if(article.category?.toLowerCase() === "noticias"){
-            
-//             const newsLink = document.createElement("a");
-
-//             newsLink.href = `article.html?id=${article.id}`;
-//             newsLink.classList.add("newsLink");
-
-//             newsLink.innerHTML = `
-//                 <div class="newsItem">
-//                     <span class="category">${article.category}</span>
-//                     <h6 class="title">${article.title}</h6>
-//                     <span class="author">${article.readTime}</span>
-//                 </div>
-//             `;
-
-//             recentContainer.appendChild(newsLink);
-//         }
-
-//         // -------------------------
-//         // 📈 TENDENCIAS
-//         // -------------------------
-//         // if(article.category?.toLowerCase() === "tendencias"){
-//         //     trendsContainer.innerHTML += `
-//         //         <a href="article.html?id=${article.id ?? ''}" class="newsItem">
-//         //             <h6>${article.title}</h6>
-//         //             <span class="author">${article.readTime}</span>
-//         //         </a>
-//         //     `;
-//         // }
-//         if (!article.id) return;
-
-//         if(article.category?.toLowerCase() === "tendencias"){
-
-//             const trendItem = document.createElement("a");
-
-//             trendItem.href = `article.html?id=${article.id}`;
-//             trendItem.classList.add("newsLink");
-
-//             trendItem.innerHTML = `
-//                 <div class="newsItem">
-//                     <span class="category">${article.category}</span>
-//                     <h6>${article.title}</h6>
-//                     <span class="author">${article.readTime}</span>
-//                 </div>
-//             `;
-
-//             trendsContainer.appendChild(trendItem);
-//         }
-        
-
-//     });
-
-//                             //----------  MORE NEWS -------------
-//             const moreContainer = document.querySelector(".moreNews");
-
-//             moreNews.forEach(article => {
-
-//                 let imageUrl = "";
-
-//                 if (Array.isArray(article.newsImage)) {
-//                     imageUrl = article.newsImage[0];
-//                 } else {
-//                     imageUrl = article.newsImage;
-//                 }
-
-//                 const item = document.createElement("a");
-//                 item.href = `article.html?id=${article.id}`;
-//                 item.classList.add("newsLink");
-
-//                 item.innerHTML = `
-//                     <div class="moreItem">
-//                         <img src="${imageUrl}">
-//                         <div>
-//                             <span class="category">${article.category}</span>
-//                             <h5>${article.title}</h5>
-//                         </div>
-//                     </div>
-//                 `;
-
-//                 moreContainer.appendChild(item);
-//             });
-
-          
-
-// }
-
-
-
-// cargarNoticias();

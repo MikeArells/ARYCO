@@ -293,7 +293,7 @@ export default async function ArticlePage({ params }) {
             <ul className="nav col-6 col-md-auto mb-2 justify-content-center mb-md-0">
 
               <li>
-                <a href="https://aryco-eta.vercel.app/Blog/blog.html" className="nav-link px-5 text-white">
+                <a href="/blog" className="nav-link px-5 text-white">
                   Blog
                 </a>
               </li>
