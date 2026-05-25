@@ -1,3 +1,5 @@
+
+
 {
   "headers": [
     {
@@ -9,5 +11,17 @@
         }
       ]
     }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+
+    { "src": "^/$", "dest": "/index.html" },
+    { "src": "^/comprar$", "dest": "/comprar.html" },
+    { "src": "^/rentar$", "dest": "/rentar.html" },
+    { "src": "^/vender$", "dest": "/vender.html" },
+    { "src": "^/nosotros$", "dest": "/nosotros.html" },
+    { "src": "^/property1$", "dest": "/property1.html" },
+    { "src": "^/register$", "dest": "/register.html" },
+    { "src": "^/upload$", "dest": "/upload.html" }
   ]
 }
