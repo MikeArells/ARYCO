@@ -186,8 +186,9 @@ async function cargarNoticias() {
             ? featured.newsImage[0]
             : featured.newsImage;
 
+            // REDIRIGE 1
         featuredContainer.innerHTML = `
-            <a href="/blog/${featured.id}" class="newsLink">
+            <a href="article.html?id=${featured.id}" class="newsLink">    
                 <img class="featPhoto" src="${imageUrl}" alt="${featured.title}">
                 <span class="category">${featured.category}</span>
                 <h4>${featured.title}</h4>
@@ -209,7 +210,7 @@ async function cargarNoticias() {
             : article.newsImage;
 
         const card = document.createElement("a");
-        card.href = `/blog/${article.id}`;
+        card.href = `article.html?id=${article.id}`;   // REDIRIGE 1
         card.classList.add("card", "newsLink");
 
         card.innerHTML = `
@@ -231,7 +232,7 @@ async function cargarNoticias() {
     topNoticias.forEach(article => {
         const el = document.createElement("a");
 
-        el.href = `/blog/${article.id}`;
+        el.href = `article.html?id=${article.id}`;    // REDIRIGE 1
         el.classList.add("newsLink");
 
         el.innerHTML = `
@@ -251,7 +252,7 @@ async function cargarNoticias() {
     topTendencias.forEach(article => {
         const el = document.createElement("a");
 
-        el.href = `/blog/${article.id}`;
+        el.href = `article.html?id=${article.id}`;   // REDIRIGE 1
         el.classList.add("newsLink");
 
         el.innerHTML = `
@@ -275,7 +276,7 @@ async function cargarNoticias() {
             : article.newsImage;
 
         const item = document.createElement("a");
-        item.href = `/blog/${article.id}`;
+        item.href = `article.html?id=${article.id}`;
         item.classList.add("newsLink");
 
         item.innerHTML = `
@@ -309,10 +310,10 @@ app.get('/article/:id', async (req, res) => {
                 <meta property="og:url" content="https://aryco-eta.vercel.app/blog/${article.id}">
             </head>
             <body>
-                <script>window.location="/blog/${article.id}"</script>
+                <script>window.location="/Blog/article.html?id=${article.id}"</script> 
             </body>
     </html>
-  `);
+  `); // REDIRIGE 1
 });
 
     
